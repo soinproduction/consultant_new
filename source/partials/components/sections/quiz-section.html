@@ -1,0 +1,439 @@
+<section class="quiz-section">
+	<div class="quiz-section__background bg-image">
+		<picture>
+			<source type="image/webp" srcset="img/quiz_bg.webp">
+			<img loading="lazy" width="1920" height="940" src="img/quiz_bg.png" alt="image">
+		</picture>
+	</div>
+	<div class="container">
+		<div class="quiz-section__inner">
+			<div class="main-top">
+				<h2 class="main-top__title">
+					Бонус
+				</h2>
+
+				<p class="main-top__subtitle">
+					Отримайте консультацію
+				</p>
+			</div>
+
+			<form class="quiz-form">
+				<div class="quiz-form__coll">
+					<div class="quiz-form__description main-description">
+						<h3 class="main-description__title">
+							Пройдіть опитування та отримайте <br> 500 грн на консультацію
+						</h3>
+
+						<p class="main-description__text">
+							Надайте відповіді на вказані запитання і ми миттєво зарахуємо 500 грн на першу
+							консультацію в мобільному застосунку КОНСУЛЬТАНТ. Це означає, що консультція для Вас
+							буде абсолютно безкоштовна, а юрист отримає оплату від нашого сервісу. Це забезпечує
+							швидку та якісну відповідь відразу від декількох фахівців. З прикладами таких
+							консультацій можна ознайомитися нижче. Нарахування бонусу обмежені в часі, тому не
+							зволікайте - дійте!
+						</p>
+					</div>
+
+					<ul class="timer-info" data-timer="4:3:43:57" data-title="Програма лояльності діє ще:">
+						<li class="timer-info__item">
+							<span class="timer-info__num days"></span>
+							<span class="timer-info__text">дні</span>
+						</li>
+						<li class="timer-info__item">
+							<span class="timer-info__num hours"></span>
+							<span class="timer-info__text">години</span>
+						</li>
+						<li class="timer-info__item">
+							<span class="timer-info__num minutes"></span>
+							<span class="timer-info__text">хвилини</span>
+						</li>
+						<li class="timer-info__item">
+							<span class="timer-info__num seconds"></span>
+							<span class="timer-info__text">секунд</span>
+						</li>
+					</ul>
+
+					<div class="quiz-form__recipient">
+						<label for="input-phone" class="quiz-form__recipient-title">
+							Введіть номер телефону на який зарахується бонус
+						</label>
+						<input id="input-phone" placeholder="+380 99 999 99 99" type="number"
+						       class="quiz-form__recipient-input">
+
+						<button class="blue-btn" type="submit">
+							Відправити
+						</button>
+					</div>
+				</div>
+
+
+				<div class="quiz-form__inner">
+					<div class="quiz-form__stub">
+						<div class="quiz-form__stub-img">
+							<picture>
+								<source type="image/webp" srcset="img/flag.webp">
+								<img src="img/flag.png" alt="image">
+							</picture>
+						</div>
+
+						<div class="quiz-form__stub-text">
+							<h4 class="quiz-form__stub-title">
+								Дякуємо за реєстрацію!
+							</h4>
+							<p>
+								Задайте Ваше питання через <br> мобільний додаток
+							</p>
+						</div>
+
+
+						<div class="quiz-form__stub-btns">
+							<a href="#">
+								<img src="img/sprite/appstore.svg" alt="appstore">
+							</a>
+							<a href="#">
+								<img src="img/sprite/gplay.svg" alt="gplay">
+							</a>
+						</div>
+
+					</div>
+					<ul class="quiz-form__questions">
+						<li class="quiz-form__questions-item">
+							<h3 class="quiz-form__questions-title" data-title="Питання 1">
+								Чи Ваше питання термінове?
+							</h3>
+
+							<div class="quiz-form__questions-inputs">
+								<label>
+									<input type="radio" name="question1" value="yes">
+									<i>Так</i>
+								</label>
+								<label>
+									<input type="radio" name="question1" value="no">
+									<i>Ні</i>
+								</label>
+							</div>
+						</li>
+						<li class="quiz-form__questions-item">
+							<h3 class="quiz-form__questions-title" data-title="Питання 2">
+								Чи займалися Вашим питаннями інші юристи?
+							</h3>
+
+							<div class="quiz-form__questions-inputs">
+								<label>
+									<input type="radio" name="question2" value="yes">
+									<i>Так</i>
+								</label>
+								<label>
+									<input type="radio" name="question2" value="no">
+									<i>Ні</i>
+								</label>
+							</div>
+						</li>
+						<li class="quiz-form__questions-item">
+							<h3 class="quiz-form__questions-title" data-title="Питання 3">
+								Чи перебуваєте Ви зараз в Україні?
+							</h3>
+
+							<div class="quiz-form__questions-inputs">
+								<label>
+									<input type="radio" name="question3" value="yes">
+									<i>Так</i>
+								</label>
+								<label>
+									<input type="radio" name="question3" value="no">
+									<i>Ні</i>
+								</label>
+							</div>
+						</li>
+
+						<li class="quiz-form__questions-item">
+							<h3 class="quiz-form__questions-title" data-title="Питання 4">
+								Чи користувалися Ви раніше послугами нашого сервісу?
+							</h3>
+
+							<div class="quiz-form__questions-inputs">
+								<label>
+									<input type="radio" name="question4" value="yes">
+									<i>Так</i>
+								</label>
+								<label>
+									<input type="radio" name="question4" value="no">
+									<i>Ні</i>
+								</label>
+							</div>
+						</li>
+						<li class="quiz-form__questions-item">
+							<h3 class="quiz-form__questions-title" data-title="Питання 5">
+								Чи зручно Вам прийняти дзвінок від нашого спеціаліста протягом наступних 10 хвилин?
+							</h3>
+
+							<div class="quiz-form__questions-inputs">
+								<label>
+									<input type="radio" name="question5" value="yes">
+									<i>Так</i>
+								</label>
+								<label>
+									<input type="radio" name="question5" value="no">
+									<i>Ні</i>
+								</label>
+							</div>
+						</li>
+
+					</ul>
+
+				</div>
+
+			</form>
+
+			<div class="quiz-slider">
+				<div class="swiper-container">
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide">
+							<div class="quiz-card">
+								<time class="quiz-card__time" datetime="2023-10-25">
+									<svg width="24" height="24">
+										<use href="img/sprite/sprite.svg#clock"></use>
+									</svg>
+									25.10.2023
+								</time>
+								<span class="quiz-card__label">
+                                    Консультації
+                              </span>
+								<h4 class="quiz-card__title">
+									Составление договор аренды жилого помещения
+								</h4>
+
+								<div class="quiz-card__bottom">
+                                  <span class="quiz-card__answer" data-count="+5">
+                                        Відповідей
+                                  </span>
+
+									<div class="quiz-card__image">
+										<picture>
+											<source type="image/webp" srcset="img/quiz-card.webp">
+											<img width="80" height="36" src="img/quiz-card.png" alt="image">
+										</picture>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="swiper-slide">
+							<div class="quiz-card">
+								<time class="quiz-card__time" datetime="2023-10-25">
+									<svg width="24" height="24">
+										<use href="img/sprite/sprite.svg#clock"></use>
+									</svg>
+									25.10.2023
+								</time>
+								<span class="quiz-card__label">
+                                    Консультації
+                              </span>
+								<h4 class="quiz-card__title">
+									Составление договор аренды жилого помещения
+								</h4>
+
+								<div class="quiz-card__bottom">
+                                  <span class="quiz-card__answer" data-count="+5">
+                                        Відповідей
+                                  </span>
+
+									<div class="quiz-card__image">
+										<picture>
+											<source type="image/webp" srcset="img/quiz-card.webp">
+											<img width="80" height="36" src="img/quiz-card.png" alt="image">
+										</picture>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="swiper-slide">
+							<div class="quiz-card">
+								<time class="quiz-card__time" datetime="2023-10-25">
+									<svg width="24" height="24">
+										<use href="img/sprite/sprite.svg#clock"></use>
+									</svg>
+									25.10.2023
+								</time>
+								<span class="quiz-card__label">
+                                    Консультації
+                              </span>
+								<h4 class="quiz-card__title">
+									Составление договор аренды жилого помещения
+								</h4>
+
+								<div class="quiz-card__bottom">
+                                  <span class="quiz-card__answer" data-count="+5">
+                                        Відповідей
+                                  </span>
+
+									<div class="quiz-card__image">
+										<picture>
+											<source type="image/webp" srcset="img/quiz-card.webp">
+											<img width="80" height="36" src="img/quiz-card.png" alt="image">
+										</picture>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="swiper-slide">
+							<div class="quiz-card">
+								<time class="quiz-card__time" datetime="2023-10-25">
+									<svg width="24" height="24">
+										<use href="img/sprite/sprite.svg#clock"></use>
+									</svg>
+									25.10.2023
+								</time>
+								<span class="quiz-card__label">
+                                    Консультації
+                              </span>
+								<h4 class="quiz-card__title">
+									Составление договор аренды жилого помещения
+								</h4>
+
+								<div class="quiz-card__bottom">
+                                  <span class="quiz-card__answer" data-count="+5">
+                                        Відповідей
+                                  </span>
+
+									<div class="quiz-card__image">
+										<picture>
+											<source type="image/webp" srcset="img/quiz-card.webp">
+											<img width="80" height="36" src="img/quiz-card.png" alt="image">
+										</picture>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="swiper-slide">
+							<div class="quiz-card">
+								<time class="quiz-card__time" datetime="2023-10-25">
+									<svg width="24" height="24">
+										<use href="img/sprite/sprite.svg#clock"></use>
+									</svg>
+									25.10.2023
+								</time>
+								<span class="quiz-card__label">
+                                    Консультації
+                              </span>
+								<h4 class="quiz-card__title">
+									Составление договор аренды жилого помещения
+								</h4>
+
+								<div class="quiz-card__bottom">
+                                  <span class="quiz-card__answer" data-count="+5">
+                                        Відповідей
+                                  </span>
+
+									<div class="quiz-card__image">
+										<picture>
+											<source type="image/webp" srcset="img/quiz-card.webp">
+											<img width="80" height="36" src="img/quiz-card.png" alt="image">
+										</picture>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="swiper-slide">
+							<div class="quiz-card">
+								<time class="quiz-card__time" datetime="2023-10-25">
+									<svg width="24" height="24">
+										<use href="img/sprite/sprite.svg#clock"></use>
+									</svg>
+									25.10.2023
+								</time>
+								<span class="quiz-card__label">
+                                    Консультації
+                              </span>
+								<h4 class="quiz-card__title">
+									Составление договор аренды жилого помещения
+								</h4>
+
+								<div class="quiz-card__bottom">
+                                  <span class="quiz-card__answer" data-count="+5">
+                                        Відповідей
+                                  </span>
+
+									<div class="quiz-card__image">
+										<picture>
+											<source type="image/webp" srcset="img/quiz-card.webp">
+											<img width="80" height="36" src="img/quiz-card.png" alt="image">
+										</picture>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="swiper-slide">
+							<div class="quiz-card">
+								<time class="quiz-card__time" datetime="2023-10-25">
+									<svg width="24" height="24">
+										<use href="img/sprite/sprite.svg#clock"></use>
+									</svg>
+									25.10.2023
+								</time>
+								<span class="quiz-card__label">
+                                    Консультації
+                              </span>
+								<h4 class="quiz-card__title">
+									Составление договор аренды жилого помещения
+								</h4>
+
+								<div class="quiz-card__bottom">
+                                  <span class="quiz-card__answer" data-count="+5">
+                                        Відповідей
+                                  </span>
+
+									<div class="quiz-card__image">
+										<picture>
+											<source type="image/webp" srcset="img/quiz-card.webp">
+											<img width="80" height="36" src="img/quiz-card.png" alt="image">
+										</picture>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="swiper-slide">
+							<div class="quiz-card">
+								<time class="quiz-card__time" datetime="2023-10-25">
+									<svg width="24" height="24">
+										<use href="img/sprite/sprite.svg#clock"></use>
+									</svg>
+									25.10.2023
+								</time>
+								<span class="quiz-card__label">
+                                    Консультації
+                              </span>
+								<h4 class="quiz-card__title">
+									Составление договор аренды жилого помещения
+								</h4>
+
+								<div class="quiz-card__bottom">
+                                  <span class="quiz-card__answer" data-count="+5">
+                                        Відповідей
+                                  </span>
+
+									<div class="quiz-card__image">
+										<picture>
+											<source type="image/webp" srcset="img/quiz-card.webp">
+											<img width="80" height="36" src="img/quiz-card.png" alt="image">
+										</picture>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<button class="arrow-button swiper-button-prev">
+					<svg width="24" height="24">
+						<use href="img/sprite/sprite.svg#arrow-l"></use>
+					</svg>
+				</button>
+				<button class="arrow-button swiper-button-next">
+					<svg width="24" height="24">
+						<use href="img/sprite/sprite.svg#arrow-r"></use>
+					</svg>
+				</button>
+			</div>
+		</div>
+	</div>
+</section>

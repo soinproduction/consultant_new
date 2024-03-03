@@ -1,0 +1,136 @@
+.services-card {
+	filter: grayscale(100%);
+	opacity: .5;
+
+	display: grid;
+	grid-template-columns: 1fr clamp(400px, 35.484vw, 440rem);
+	grid-template-rows: 1fr auto;
+	gap: clamp(25px, 4.032vw, 50rem) 0;
+	position: relative;
+	height: 100%;
+	transition: opacity .3s, transform .3s, filter .3s;
+
+	@include small-tablet {
+		grid-template-columns: minmax(174px, 45%) 1fr;
+	}
+
+	@include mobile {
+		row-gap: 65px;
+		grid-template-rows: 1fr auto;
+	}
+
+	&__descr {
+		grid-row: 1;
+		justify-content: flex-end;
+
+		@include mobile {
+			grid-column: 1/-1;
+		}
+	}
+
+	&__list,
+	&__descr {
+		@include for-mobile {
+			grid-column: 2;
+		}
+	}
+
+	&__inner {
+		padding: Max(50px, 50rem) 0;
+		position: relative;
+		grid-column: 1/-1;
+		grid-row: 2;
+		display: grid;
+		grid-template-columns: 1fr clamp(400px, 35.484vw, 440rem);
+
+		min-height: clamp(245px, 19.758vw, 350rem);
+
+		@include small-tablet {
+			grid-template-columns: minmax(174px, 45%) 1fr;
+		}
+
+		@include mobile {
+			min-height: clamp(200px, 19.758vw, 350rem);
+			padding: 30px 0;
+		}
+	}
+
+	&__image {
+		grid-column: 1;
+		grid-row: 1/-1;
+		margin: calc(clamp(25px, 4.032vw, 50px) * -1) 0 calc(clamp(0px, 12.097vw, 150px) * -1);
+		display: flex;
+		padding: 0 clamp(10px, 4.839vw, 60rem);
+		align-items: center;
+		width: 100%;
+		justify-content: center;
+		z-index: 10;
+		position: relative;
+
+		@include mobile {
+			margin: -45px 0 -32px;
+			grid-row: 2;
+		}
+
+		img, picture {
+			width: 100%;
+		}
+	}
+
+	&__link {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+
+	.main-description__text {
+		max-width: Max(342px, 342rem);
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: clamp(17px, 2.419vw, 30rem);
+		padding-right: 10px;
+
+		@include mobile {
+			grid-column: 2;
+		}
+
+		&-icon {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			max-width: clamp(20px, 3.065vw, 38rem);
+			width: 100%;
+			max-height: clamp(20px, 2.581vw, 32rem);
+			flex-shrink: 0;
+
+			img {
+				min-width: 60%;
+				height: auto;
+			}
+		}
+
+		&-item {
+			color: rgba(var(--cl-a),1.0);
+			font-family: var(--font-family);
+			font-size: Max(16px, 16rem);
+			font-style: normal;
+			font-weight: 750;
+			line-height: 120%;
+
+			display: flex;
+			align-items: center;
+			gap: Max(25px, 25rem);
+
+			@include small-tablet {
+				gap: clamp( 10px, 0.911vw, 25rem);
+			}
+
+			@include mobile {
+				font-size: clamp(10px ,2.667vw, 16rem);
+			}
+		}
+	}
+}

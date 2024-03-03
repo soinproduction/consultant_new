@@ -1,0 +1,36 @@
+.main-description {
+	display: flex;
+	flex-direction: column;
+	gap: Max(10px, 10rem);
+
+	&__title {
+		color: rgba(var(--cl-b), 0.85);
+		font-family: var(--font-family);
+		font-size: clamp(16px, 2.903vw, 36rem);
+		font-style: normal;
+		font-weight: 750;
+		line-height: 130%;
+		position: relative;
+		padding-left: clamp(12px, 1.694vw, 21rem);
+
+		&:before {
+			top: 0;
+			bottom: 0;
+			left: 0;
+			width: Max(3px, 3rem);
+			position: absolute;
+			content: '';
+			background-color: rgba(var(--bg-c),1.0);
+		}
+	}
+
+	&__text {
+		color: rgba(var(--cl-b),1.0);
+		font-family: var(--font-family);
+		font-size: Max(14px, 14rem);
+		font-style: normal;
+		font-weight: 400;
+		line-height: 120%; /* 18.2px */
+	}
+
+}

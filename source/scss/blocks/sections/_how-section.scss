@@ -1,0 +1,27 @@
+.how-section {
+	position: relative;
+	padding: clamp(35px, 6.855vw, 85rem) 0 clamp( 37px, 9.677vw, 120rem);
+	overflow: hidden;
+	z-index: 10;
+
+	@include for-desktop {
+		padding-bottom: 20rem;
+		min-height: 1100rem;
+	}
+
+	.info-counter {
+		margin-bottom: clamp(40px, 9.677vw, 120px);
+	}
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		gap: clamp(20px ,3.226vw, 40rem);
+
+		.main-description {
+			max-width: Max(580px, 580rem);
+		}
+	}
+
+}
+

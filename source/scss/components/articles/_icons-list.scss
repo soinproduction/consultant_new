@@ -1,0 +1,41 @@
+.icons-list {
+	display: flex;
+	flex-direction: column;
+	gap: clamp(15px, 2.419vw, 30px);
+
+	&__item {
+		display: flex;
+		gap: clamp(11px, 3.226vw, 40rem);
+		background-color: rgba(var(--bg-e),1.0);
+		align-items: center;
+		padding:
+				clamp(12px, 1.29vw, 16rem)
+				Max(8px, 8rem)
+				clamp(12px, 1.613vw, 20rem)
+				clamp(12px, 1.613vw, 20rem);
+
+		svg {
+			flex-shrink: 0;
+			width: Max(50px, 50rem);
+			height: auto;
+
+			@include mobile {
+				width: clamp( 30px, 4.032vw, 50rem);
+			}
+		}
+
+		* {
+			color: rgba(var(--cl-a),1.0) !important;
+		}
+
+		@include small-tablet {
+			align-items: flex-start;
+		}
+
+		@include mobile {
+			padding: clamp(12px, 1.29vw, 16px);
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
+}

@@ -1,0 +1,28 @@
+.conclusion {
+	display: flex;
+	flex-direction: column;
+	gap: clamp(15px, 2.016vw, 25rem);
+	padding: clamp(12px, 2.419vw, 30px);
+	margin-left: Max(20px, 20rem);
+	margin-bottom:  clamp(20px, 2.419vw, 30rem);
+	margin-top:  clamp(20px, 2.419vw, 30rem);
+
+	&__label {
+		background-color: rgba(var(--bg-c),1.0);
+		color: rgba(var(--cl-a),1.0);
+		font-family: var(--font-family);
+		font-size: clamp(16px, 1.774vw, 22rem);
+		font-style: normal;
+		font-weight: 750;
+		line-height: 130%;
+		width: fit-content;
+		padding: clamp(5px, 1.048vw, 13rem) clamp(10px, 3.226vw, 40px);
+		position: relative;
+		z-index: 2;
+		margin-left: calc((clamp(12px, 2.419vw, 30px) + Max(20px, 20rem)) * -1);
+	}
+
+	box-shadow: 0px -6px 33.3px 0px rgba(0, 0, 0, 0.15);
+	backdrop-filter: blur(10.649999618530273px);
+	@include gradient-border(var(--border-gradint), Max(1px, 1rem));
+}

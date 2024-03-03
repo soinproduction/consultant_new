@@ -1,0 +1,54 @@
+.contact-list {
+	display: flex;
+	flex-direction: column;
+	gap: clamp(14px, 1.667vw, 24rem);
+
+	@include mobile {
+		max-width: 80%;
+	}
+
+	&__item {
+		display: grid;
+		grid-template-columns: clamp(16px, 1.806vw, 26rem) 1fr;
+		grid-template-rows: repeat(2, auto);
+		align-items: center;
+		gap: Max(8px, 8rem) Max(16px, 16rem);
+	}
+
+	&__icon {
+		display: flex;
+		align-items: center;
+		grid-row: 1/-1;
+
+		svg {
+			max-width: 100%;
+			max-height: Max(38px, 38rem);
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__label {
+		color: rgba(var(--cl-b),0.8);
+		font-family: var(--font-family);
+		font-size: clamp(14px, 1.25vw, 18rem);
+		font-style: normal;
+		font-weight: 700;
+		line-height: 100%;
+	}
+
+	a {
+		color: rgba(var(--cl-b),0.8);
+		font-family: var(--font-family);
+		font-size: clamp(14px, 1.25vw, 18rem);
+		font-style: normal;
+		font-weight: 400;
+		line-height: 100%;
+
+		&[href^="mailto:"] {
+			color: rgba(var(--cl-c),1.0);
+			text-decoration-line: underline;
+			font-weight: 450;
+		}
+	}
+}

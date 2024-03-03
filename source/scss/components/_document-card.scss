@@ -1,0 +1,113 @@
+.document-card {
+	border: 1px solid var(--br-c);
+	background: rgba(0, 0, 0, 0.75);
+	backdrop-filter: blur(2.200000047683716px);
+	padding-top: clamp(16px, 2.581vw, 32rem);
+	max-width: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: clamp(20px, 2.823vw, 35rem);
+
+	&__type {
+		padding: 0 clamp(25px, 4.435vw, 74rem);
+
+		@include laptop {
+			padding: 0 25px;
+		}
+	}
+
+	&__title {
+		color: rgba(var(--cl-a),1.0);
+		text-align: center;
+		font-family: var(--font-family);
+		font-size: clamp(16px, 2.419vw, 32rem);
+		font-style: normal;
+		font-weight: 750;
+		line-height: 130%; /* 46.8px */
+	}
+
+	&__type {
+		//min-height: 20vh;
+		.yt-lazyload::before {
+			padding-top: 80%;
+		}
+
+		&-image {
+			img, picture {
+				max-width: 100%;
+				width: 100%;
+				display: flex;
+			}
+		}
+
+		&-video {
+			margin: 0 -10px;
+		}
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		justify-items: center;
+
+		//display: flex;
+		//flex: 1;
+		//flex-wrap: wrap;
+		border-top: 1px solid rgba(85, 85, 85, 0.5);
+
+		&--mode {
+			@include for-mobile {
+				.document-card__list-item {
+					grid-column: span 4;
+
+					&:nth-child(1),
+					&:nth-child(2) {
+						grid-column: span 6;
+					}
+				}
+			}
+
+			@include mobile {
+				.document-card__list-item {
+					&:last-of-type {
+						grid-column: 1/-1;
+					}
+				}
+			}
+
+		}
+
+
+		&-item {
+			grid-column: span 6;
+			border-collapse: collapse;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			gap: clamp(6px, 0.968vw, 12rem);
+			padding: clamp(10px, 1.21vw, 28rem) Min(10px, 10rem);
+			border: 1px solid rgba(85, 85, 85, 0.5);
+			width: 100%;
+
+			font-family: var(--font-family);
+			font-style: normal;
+			font-weight: 400;
+			font-size: clamp(14px, 1.452vw, 18rem);
+
+
+
+			color:rgba(var(--cl-a),1.0);
+
+			&:before {
+				content: attr(data-title);
+				color: rgba(var(--cl-a),1.0);
+				font-weight: 750;
+				line-height: 130%; /* 23.4px */
+
+				font-size: clamp(14px, 1.452vw, 18rem);
+			}
+		}
+	}
+}

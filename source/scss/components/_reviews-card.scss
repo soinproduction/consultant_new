@@ -1,0 +1,109 @@
+.reviews-card {
+	background: rgba(255, 255, 255, 0.06);
+	backdrop-filter: blur(29px);
+	padding: Max(20px, 20rem);
+	display: flex;
+	flex-direction: column;
+	gap: clamp(12px, 1.29vw, 16rem);
+	height: 100%;
+
+	@include tablet {
+		padding: clamp(12px, 1.613vw, 20rem);
+	}
+
+	&__top {
+		display: grid;
+		grid-template-columns: clamp(38px, 4.355vw, 54rem) 1fr auto;
+		gap: 20px;
+	}
+
+	&__name {
+		color: rgba(var(--cl-a),1.0);
+		font-family: var(--font-family);
+		font-size: Max(18px, 18rem);
+		font-style: normal;
+		font-weight: 750;
+		line-height: 130%;
+
+		@include small-tablet {
+			font-size: clamp(14px, 1.452vw, 18rem);
+		}
+	}
+
+	&__time {
+		color: rgba(var(--cl-a),1.0);
+		font-family: var(--font-family);
+		font-size: Max(16px, 16rem);
+		font-style: normal;
+		font-weight: 400;
+		line-height: 100%;
+		display: flex;
+		align-items: center;
+		height: clamp(38px, 4.355vw, 54rem);
+
+		@include small-tablet {
+			font-size: clamp(14px, 1.29vw, 16rem);
+		}
+	}
+
+	&__wrapp {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: Max(5px, 5rem);
+
+		svg {
+			max-width: Max(80px, 80rem);
+			height: auto;
+			width: 100%;
+		}
+	}
+
+	&__image {
+		width: 100%;
+		aspect-ratio: 1/1;
+		background: #FFF;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		color: rgba(var(--cl-c),1.0);
+		font-family: var(--font-family);
+		font-size: Max(18px, 18rem);
+		font-style: normal;
+		font-weight: 750;
+		line-height: 100%;
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	p {
+		color: rgba(var(--cl-a),0.8);
+		font-family: var(--font-family);
+		font-size: Max(16px, 16rem);
+		font-style: normal;
+		font-weight: 400;
+		line-height: 130%;
+		margin-top: auto;
+
+		padding-top: clamp(12px, 1.29vw, 16rem);
+		position: relative;
+
+		&:before {
+			left: 0;
+			right: 0;
+			top: 0;
+			height: Max(1px, 1rem);
+			position: absolute;
+			content: '';
+			pointer-events: none;
+			background: linear-gradient(90deg,
+					rgba(255, 255, 255, 0.00) 0%,
+					rgba(255, 255, 255, 0.10) 50.52%,
+					rgba(255, 255, 255, 0.00) 100%);
+		}
+	}
+}

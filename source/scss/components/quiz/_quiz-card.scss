@@ -1,0 +1,106 @@
+.quiz-card {
+	padding: Max(23px, 23rem) clamp(16px, 1.613vw, 20rem) Max(18px, 18rem);
+	display: grid;
+	align-items: center;
+	gap: Max(15px, 15rem);
+	grid-template-columns: 1fr auto;
+	max-width: Max(350px, 350rem);
+	width: 100%;
+	margin: 0 auto;
+
+	border-radius: 2px;
+	background: rgba(255, 255, 255, 0.28);
+	box-shadow: 6px 10px 34px 0px rgba(19, 151, 214, 0.14) inset;
+	backdrop-filter: blur(3.5px);
+
+	@include for-ios {
+		@include small-tablet {
+			max-width: Max(370px, 370rem);
+		}
+	}
+
+	&__time {
+		display: flex;
+		align-items: center;
+		gap: Max(5px, 5rem);
+
+		color: rgba(var(--cl-b),1.0);
+		font-family: var(--font-family);
+		font-size: Max(14px, 14rem);
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: -0.2px;
+
+		svg {
+			width: Max(24px, 24rem);
+			height: Max(24px, 24rem);
+		}
+	}
+
+	&__label {
+		padding: Max(4px, 4rem) Max(8px, 8rem);
+		border-radius: Max(20px, 20rem);
+		background: rgba(var(--bg-i),1.0);
+
+		color: rgba(var(--cl-a),1.0);
+		font-feature-settings: 'clig' off, 'liga' off;
+		font-family: var(--font-family);
+		font-size: Max(10px, 10rem);
+		font-style: normal;
+		font-weight: 750;
+		line-height: 120%;
+		display: flex;
+		align-items: center;
+		letter-spacing: -0.2px;
+	}
+
+	&__title {
+
+		@include line-clamp(2);
+	}
+
+	&__bottom {
+		display: flex;
+		align-items: center;
+		gap: Max(10px, 10rem);
+		justify-content: space-between;
+
+		padding-top: Max(20px, 20rem);
+		border-top: Max(1px, 1rem) solid var(--br-b);
+	}
+
+	&__answer {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+
+		color: rgba(var(--cl-a),1.0);
+		font-family: var(--font-family);
+		font-size: Max(14px, 14rem);
+		font-style: normal;
+		font-weight: 750;
+		line-height: normal;
+		letter-spacing: -0.1px;
+
+		&:after {
+			content: attr(data-count);
+		}
+	}
+
+	&__image {
+		max-width: Max(80px, 80rem);
+		max-height: Max(36px, 36rem);
+		width: 100%;
+		flex-shrink: 0;
+
+		img, picture {
+			width: 100%;
+		}
+	}
+
+	&__title,
+	&__bottom {
+		grid-column: 1/-1;
+	}
+}

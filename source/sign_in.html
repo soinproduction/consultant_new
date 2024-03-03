@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+@include('partials/header.html')
+
+<main>
+    <section class="main-hero">
+        <div class="main-hero__bg bg-image">
+            <picture>
+                <source type="image/webp" srcset="img/sign_bg.webp">
+                <img loading="lazy" width="1920" height="1080" src="img/sign_bg.png" alt="image">
+            </picture>
+        </div>
+
+        <div class="container mode">
+            <div class="main-hero__inner sign sign-page">
+
+                <div class="sign__inner">
+                    <div class="sign__inner-image">
+                        <picture>
+                        	<source type="image/webp" srcset="img/sign_image.webp">
+                        	<img loading="lazy" width="300" height="574" src="img/sign_image.png" alt="image">
+                        </picture>
+                    </div>
+                    <ul class="sign__list">
+                        <li class="sign__list-item" data-text="BAse">
+                            <h3 class="sign__list-title">
+                                Безкоштовно
+                            </h3>
+                            <ul>
+                                <li>Можливість заробляти на публікації статей, відео, документів.</li>
+                                <li>Можливість заробляти на консультаціях.</li>
+                                <li>Можливість заробляти поділившись реферальним кодом з колегами.</li>
+                                <li>Закритий телеграм чат для юристів.</li>
+                            </ul>
+                        </li>
+
+                        <li class="sign__list-item" data-text="pro">
+                            <h3 class="sign__list-title">
+                                BASE + переваги
+                            </h3>
+                            <ul>
+                                <li>Можливість брати послуги з високим чеком в роботу.</li>
+                                <li>Власна СРМ система для роботи з клієнтами та задачами.</li>
+                                <li>Можливість збільшити рейтинг за рахунок попереднього досвіду.</li>
+                                <li>Можливість запропонувати свої унікальні послуги по своїй ціні.</li>
+                                <li>Можливість ділитись профілем в соціальних мережах ( інстаграм, фб, телеграм, інші сайти)</li>
+                                <li>Персональний менеджер 24/7, який забезпечить швидкий заробіток</li>
+                                <li> Участь в професійних зйомках відеоконтенту за рахунок компанії</li>
+                                <li> Доступ до пошуку по відкритих базах даних (в розробці)</li>
+                                <li>Автоматизований контроль судових справ (в розробці)</li>
+                                <li>Можливість заробляти на відео трансляціях (в розробці)</li>
+                            </ul>
+                        </li>
+                        <li class="sign__list-item" data-text="PREMIUM">
+                            <h3 class="sign__list-title">
+                                PRO + переваги
+                            </h3>
+                            <ul>
+                                <li>Особистий менеджер з продажів Ваших послуг.</li>
+                                <li>Особистий маркетолог.</li>
+                                <li>Топ в пошуку Гугл за вашим ПІБ.</li>
+                                <li>Офіційна гарантія заробітку.</li>
+                                <li>Поширення Вашого профілю в наших соціальних мережах та на головній сторінці сайту.</li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="video-box">
+                         <span class="blue-btn" data-src="https://youtu.be/lc1WWLlz10k?si=keLpsLC49yvZEChU">
+                            Дивитися відео
+                        </span>
+                    </div>
+
+                </div>
+
+                <div class="sign__coll">
+                    <div class="main-top">
+                        <h1 class="main-top__title">
+                            Авторизація
+                        </h1>
+                        <p class="main-top__subtitle">
+                            Увійдіть в акаунт
+                        </p>
+                    </div>
+
+                    <form class="sign-form">
+                        <label for="#" class="sign-form__label full">
+                            <input type="email" class="error" placeholder="Пошта*" required>
+                            <span class="error-massage">Помилка</span>
+                        </label>
+                        <label for="#" class="sign-form__label full">
+                            <input type="password" placeholder="Пароль*" required>
+                            <span class="error-massage">Помилка</span>
+                        </label>
+
+                        <div class="sign-form__bottom mode">
+                            <button class="blue-btn">Увійти</button>
+
+                            <p>Немає акаунта? <a href="#">Зареєструвати</a>
+                            </p>
+                            <p><a href="#">Забули пароль?</a></p>
+                        </div>
+
+                    </form>
+                </div>
+
+
+
+
+
+                @include('partials/components/transparent-social.html')
+                @include('partials/components/call-trigger.html')
+
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<!--@include('partials/footer.html')-->
+@include('partials/modals.html')
+</body>
+<script src="js/main.js"></script>
+
+</html>
+
+

@@ -1,0 +1,96 @@
+.quiz-section {
+	position: relative;
+	padding: clamp(25px, 7.258vw, 90rem) 0 clamp(30px, 4.032vw, 50rem);
+	overflow: hidden;
+
+	&:before {
+		transform: translateX(-50%);
+		left: 50%;
+		position: absolute;
+		width: 100vw;
+		height: Max(350px, 350rem);
+		bottom: 0;
+		content: '';
+		z-index: 0;
+		pointer-events: none;
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.82) 0%, rgba(0, 0, 0, 0.00) 100%);
+	}
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		gap: clamp(30px, 5.645vw, 70rem);
+	}
+}
+
+.quiz-slider {
+	margin: 0 calc(clamp(5px, 0.806vw, 10rem) * -2);
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px 34px;
+	position: relative;
+
+	.swiper-container {
+		overflow: initial;
+		max-width: 100%;
+		grid-column: 1/-1;
+		width: 100%;
+	}
+
+	.swiper-slide {
+		padding: 0 clamp(5px, 0.806vw, 10rem);
+		transition: all .3s;
+
+		&:not(:is(
+		.swiper-slide-duplicate-prev,
+		.swiper-slide-duplicate-next,
+		.swiper-slide-duplicate-active,
+		.swiper-slide-prev,
+		.swiper-slide-next,
+		.swiper-slide-active)) {
+			filter: grayscale(100%);
+			opacity: .3;
+		}
+	}
+
+	.swiper-button {
+
+		&-disabled {
+			pointer-events: none;
+			filter: grayscale(100%);
+			opacity: .3;
+		}
+
+		&-next {
+			z-index: 2;
+
+			@include  for-small-tablet {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				right: clamp(15px ,2.419vw, 30rem);
+			}
+
+			@include small-tablet {
+				margin-right: auto;
+			}
+		}
+
+		&-prev {
+			z-index: 2;
+
+			@include for-small-tablet {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: clamp(15px ,2.419vw, 30rem);
+			}
+
+			@include small-tablet {
+				margin-left: auto;
+			}
+		}
+	}
+
+
+}

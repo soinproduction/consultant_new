@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+@include('partials/header.html')
+
+<main>
+    <section class="main-hero">
+        <div class="main-hero__bg bg-image">
+            <picture>
+                <source type="image/webp" srcset="img/sign_bg.webp">
+                <img loading="lazy" width="1920" height="1080" src="img/sign_bg.png" alt="image">
+            </picture>
+        </div>
+
+        <div class="container mode">
+            <div class="main-hero__inner sign">
+
+                <div class="main-top">
+                    <h1 class="main-top__title">
+                        Реестрація
+                    </h1>
+                    <p class="main-top__subtitle">
+                        Заповніть свої дані
+                    </p>
+                </div>
+
+                <form class="sign-form">
+                    <div class="select full" data-select>
+                        <div class="select__header">
+                            <input type="hidden" class="select__input input-select" name="sign_value" value="1"/>
+                            <span class="select__current" data-id="1">Оберіть спецалізацію</span>
+                            <svg width="16" height="16">
+                                <use href="img/sprite/sprite.svg#arrow-bottom"></use>
+                            </svg>
+                        </div>
+                        <div class="select__body">
+                            <div class="sign-form__list">
+                                <label>
+                                    <input type="radio" id="1" name="sign">
+                                    <span data-id="1" data-type="option">Юрист / Адвокат</span>
+                                </label>
+                                <label  >
+                                    <input type="radio" id="2" name="sign">
+                                    <span data-id="2" data-type="option">Бухгалтер / Аудитор</span>
+                                </label>
+                                <label >
+                                    <input type="radio" id="3" name="sign">
+                                    <span data-id="3" data-type="option">Нотаріус</span>
+                                </label>
+                                <label >
+                                    <input type="radio" id="4" name="sign">
+                                    <span data-id="4" data-type="option">Приватний художник</span>
+                                </label>
+                                <label >
+                                    <input type="radio" id="5" name="sign">
+                                    <span data-id="5" data-type="option">Ліквідатор</span>
+                                </label>
+                                <label >
+                                    <input type="radio" id="6" name="sign">
+                                    <span data-id="6" data-type="option">Патентні повірені</span>
+                                </label>
+                                <label>
+                                    <input type="radio" id="7" name="sign">
+                                    <span data-id="7" data-type="option">Митний брокер</span>
+                                </label>
+                                <label >
+                                    <input type="radio" id="8" name="sign">
+                                    <span data-id="8" data-type="option">Тест спец</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <label for="#" class="sign-form__label">
+                        <input type="text" class="error" placeholder="Прізвище*" required>
+                        <span class="error-massage">Помилка</span>
+                    </label>
+                    <label for="#" class="sign-form__label">
+                        <input type="text" placeholder="Імʼя*" required>
+                        <span class="error-massage">Помилка</span>
+                    </label>
+                    <label for="#" class="sign-form__label full">
+                        <input type="text" placeholder="По батькові*" required>
+                        <span class="error-massage">Помилка</span>
+                    </label>
+                    <label for="#" class="sign-form__label">
+                        <input type="tel" placeholder="+380 (99) 999-99-99">
+                        <span class="error-massage">Помилка</span>
+                    </label>
+                    <label for="#" class="sign-form__label">
+                        <input type="email" placeholder="Пошта*" required>
+                        <span class="error-massage">Помилка</span>
+                    </label>
+                    <label for="#" class="sign-form__label">
+                        <input type="password" placeholder="Пароль*" required>
+                        <span class="error-massage">Помилка</span>
+                    </label>
+                    <label for="#" class="sign-form__label">
+                        <input type="password" placeholder="Пароль ще раз*"required>
+                        <span class="error-massage">Помилка</span>
+                    </label>
+                    <label for="#" class="sign-form__label full">
+                        <input type="text" placeholder="Реферальний код">
+                        <span class="error-massage">Помилка</span>
+                    </label>
+
+                    <div class="select full" data-select>
+                        <div class="select__header">
+                            <input type="hidden" class="select__input input-select" name="sign_value" value="1"/>
+                            <span class="select__current" data-id="1">Оберіть місто</span>
+                            <svg width="16" height="16">
+                                <use href="img/sprite/sprite.svg#arrow-bottom"></use>
+                            </svg>
+                        </div>
+                        <div class="select__body">
+                            <div class="sign-form__list">
+                                <label>
+                                    <input type="radio" id="a" name="city">
+                                    <span data-id="a" data-type="option">Киев</span>
+                                </label>
+                                <label>
+                                    <input type="radio" id="b" name="city">
+                                    <span data-id="b" data-type="option">Харьков</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sign-form__bottom">
+                        <div class="sign-form__bottom-load">
+                            <label class="blue-btn blue-btn--border">
+                                <input type="file" multiple id="fileInput">
+                                <svg width="24" height="24">
+                                    <use href="img/sprite/sprite.svg#fi-bs-plus"></use>
+                                </svg>
+                                Завантажити документи
+                            </label>
+
+                            <div id="fileList" class="sign-form__file-list"></div>
+
+                            <span class="arrow-button">
+                                i
+                            </span>
+                            <div class="sign-form__info">
+                                i
+                                <span>
+                                    Прикріпіть документи, що підтверджують наявність вищої освіти, сертифікацію та трудовий стаж. <br><br>
+                                     Можливий формат файлу: png, jpg, pdf
+                                </span>
+                            </div>
+                        </div>
+
+                        <p>Натискаючи кнопку "Зареєструватися" Ви автоматично погоджуєтеся з <a href="#">умовами нашого сервісами</a>
+                        </p>
+
+                        <button class="blue-btn">Зарееструватися</button>
+
+                        <p><a href="#">Увійдіть</a> якщо у вас є акаунт</p>
+                    </div>
+
+                </form>
+
+
+
+                @include('partials/components/transparent-social.html')
+                @include('partials/components/call-trigger.html')
+
+            </div>
+        </div>
+    </section>
+</main>
+
+<!--@include('partials/footer.html')-->
+@include('partials/modals.html')
+</body>
+<script src="js/main.js"></script>
+
+</html>
+
+

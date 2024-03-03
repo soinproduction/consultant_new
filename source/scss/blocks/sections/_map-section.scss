@@ -1,0 +1,22 @@
+.map-section {
+	position: relative;
+
+	&__background {
+		filter: grayscale(100%) invert(100%) contrast(100%);
+	}
+
+	&__inner {
+		min-height: Min(62.5vw, 900rem);
+
+		padding-top: clamp(40px, 7.222vw, 104rem);
+		padding-bottom: Max(80px, 80rem);
+
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-end;
+
+		@include mobile {
+			padding-bottom: 250px;
+		}
+	}
+}

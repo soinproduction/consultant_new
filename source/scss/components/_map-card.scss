@@ -1,0 +1,42 @@
+.map-card {
+	display: grid;
+	grid-template-rows: repeat(2, auto);
+	max-width: Max(512px, 512rem);
+	width: 100%;
+	box-shadow: 0px 2px 25px 0px rgba(23, 149, 209, 0.53);
+
+	&__image {
+		position: relative;
+		max-width: 100%;
+
+		picture, img {
+			width: 100%;
+			height: auto;
+			display: flex;
+		}
+	}
+
+	&__logo {
+		position: absolute;
+		bottom: clamp(12px, 2.083vw, 30rem);
+		left: clamp(44px, 6.181vw, 89rem);
+	  right: clamp(44px, 6.181vw, 89rem);
+	}
+
+	&__info {
+		padding: clamp(13px, 1.389vw, 32rem)  clamp(12px, 1.389vw, 30rem);
+		background-color: rgba(var(--bg-a),1.0);
+		display: flex;
+		flex-direction: column;
+		gap: clamp(14px, 1.389vw, 28px);
+	}
+
+	&__title {
+		color: rgba(var(--cl-b),0.8);
+		font-family: var(--font-family);
+		font-size: clamp(16px, 1.25vw, 24rem);;
+		font-style: normal;
+		font-weight: 750;
+		line-height: 130%;
+	}
+}

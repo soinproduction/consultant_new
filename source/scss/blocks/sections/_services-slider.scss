@@ -1,0 +1,28 @@
+.services-slider {
+	padding: clamp(30px, 7.258vw, 90px) 0 clamp(30px, 120px, 120rem);
+	overflow: hidden;
+	position: relative;
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		gap: clamp(25px, 4.032vw, 50rem);
+	}
+
+	.main-top {
+		width: 100%;
+
+		&__title {
+			align-self: flex-start;
+			margin-left: clamp(40px ,14.516vw, 180rem);
+		}
+
+		&__subtitle {
+			align-self: flex-start;
+		}
+	}
+
+
+
+
+}

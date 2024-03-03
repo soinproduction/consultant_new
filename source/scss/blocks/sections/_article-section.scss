@@ -1,0 +1,32 @@
+.article-section {
+	position: relative;
+
+	&__inner {
+		padding: clamp(25px, 7.258vw, 110rem) 0 clamp(30px, 8.065vw, 130rem);
+		display: flex;
+		flex-direction: column;
+		gap: clamp(20px, 3.226vw, 40rem);
+	}
+
+	.main-top {
+		width: 100%;
+		align-items: flex-start;
+
+		&__title {
+			margin-left: clamp(40px, 11.29vw, 180rem);
+
+			@include tablet {
+				margin-left: clamp(40px, 4vw, 180rem);
+			}
+		}
+
+		&__subtitle {
+			color: rgba(var(--cl-a),1.0);
+		}
+	}
+
+	.categories-card__name {
+		color: rgba(var(--cl-a),1.0);
+	}
+
+}

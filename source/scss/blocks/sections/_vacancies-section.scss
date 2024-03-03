@@ -1,0 +1,20 @@
+.vacancies-section {
+		position: relative;
+		padding: clamp(30px, 8.065vw, 120rem) 0;
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		gap: clamp(12px, 1.613vw, 20rem);
+	}
+
+	&.content-box {
+
+
+	}
+
+	.content-box__inner {
+		background-color: rgba(var(--bg-a),1.0);
+		padding: clamp(20px, 3.226vw, 40rem) clamp(20px, 2.419vw, 30rem);
+	}
+}

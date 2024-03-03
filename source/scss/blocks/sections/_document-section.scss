@@ -1,0 +1,61 @@
+.document-section {
+	//background-color: #fff;
+	position: relative;
+
+	&__bg {
+		opacity: .7;
+	}
+
+	&__inner {
+		padding: clamp(30px, 6.452vw, 110rem)	 0 clamp(30px, 8.065vw, 133rem);
+
+		display: grid;
+		grid-template-columns: 1.4fr minmax(400px, 1fr);
+
+		@include laptop {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@include small-tablet {
+			max-width: 576px;
+			margin: 0 auto;
+			grid-template-columns: 100%;
+		}
+
+		align-items: flex-start;
+		gap: clamp(27px, 4.032vw, 100rem);
+
+		.content-box {
+
+			&__inner {
+				overflow-y: auto;
+				max-height: var(--document-card-height);
+				padding-right: clamp(30px, 3.226vw, 62rem);
+
+				@include small-tablet {
+					max-height: initial;
+					padding: 0;
+				}
+
+				&::-webkit-scrollbar {
+					width: Max(3px, 3rem);
+
+					@include small-tablet {
+						display: initial;
+					}
+				}
+
+			}
+		}
+
+		&__coll {
+
+		}
+	}
+
+	&__coll {
+		@include small-tablet {
+			order: -1;
+		}
+	}
+}

@@ -1,0 +1,97 @@
+.reviews-section {
+	position: relative;
+	padding: clamp(25px, 7.661vw, 95rem) 0 clamp(30px, 9.677vw, 120rem);
+
+	--size: Max(1290px, 1290rem);
+	--gap: clamp(10px, 3.629vw, 45rem);
+	--slider-offset: clamp(10px, 2.419vw, 30rem);
+
+	@include desktop {
+		--size: 90vw;
+	}
+
+	@include for-small-tablet {
+		.rating-list,
+		.reviews-slider__inner {
+			margin: 0 auto;
+			max-width: 100vw;
+			width: calc(var(--size) - clamp(40px, 4.839vw, 60rem) - (var(--gap) * 2));
+		}
+	}
+
+
+	.rating-list {
+		margin-bottom: clamp(20px, 2.419vw, 30rem);
+	}
+
+	.main-top {
+		margin-bottom: clamp(20px, 3.226vw, 40rem);
+		width: 100%;
+
+
+		&__title {
+			align-self: flex-end;
+		}
+
+		&__subtitle {
+			color: rgba(var(--cl-a),1.0);
+			margin-right: -10%;
+		}
+
+	}
+
+	.reviews-slider {
+		width: fit-content;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		gap: var(--gap);
+
+		&__inner {
+			@include small-tablet {
+				max-width: 100%;
+				grid-column: 1/-1;
+			}
+		}
+
+		@media (max-width: 1660px) {
+			gap: 25px;
+		}
+
+		@include small-tablet {
+			max-width: 100%;
+			width: 100%;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 20px var(--slider-offset);
+		}
+
+		@include mobile {
+			gap: 20px 34px;
+		}
+
+		.swiper {
+
+			&-button-prev {
+				@include for-small-tablet {
+					order: -1
+				}
+
+				@include small-tablet {
+					margin-left: auto;
+				}
+			}
+
+			&-container {
+				margin: calc(var(--slider-offset) / -2);
+			}
+
+			&-slide {
+				padding: calc(var(--slider-offset) / 2);
+				height: initial;
+			}
+		}
+	}
+
+
+}

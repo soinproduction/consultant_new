@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+@include('partials/header.html')
+
+<main>
+    <section class="main-hero">
+        <div class="main-hero__bg bg-image">
+            <!-- в poster может быть превью видео, на случай если оно не загрузилось или иная картинка -->
+            <video id="video" playsinline autoplay muted loop poster=''>
+                <source src="img/bg.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="container mode">
+            <div class="main-hero__inner home">
+                <div class="main-top">
+                    <h1 class="main-top__title main-top__title--big">
+                        ЮРИСТ
+                    </h1>
+
+                    <p class="main-top__subtitle main-top__subtitle--big">
+                        Завжди поруч
+                    </p>
+                </div>
+
+                <form action="#" class="search-form" data-text="Терміново потрібен сімейний адвокат|Замовляйте юридичні послуги">
+                    <div class="search-form__label">
+                        <button type="submit">
+                            <svg width="25" height="25">
+                                <use href="img/sprite/sprite.svg#search"></use>
+                            </svg>
+                        </button>
+
+                        <input id="searchText" type="text">
+                    </div>
+
+                    <button class="search-form__btn blue-btn">
+                        Отримати допомогу
+                    </button>
+                </form>
+
+                @include('partials/components/transparent-social.html')
+
+                @include('partials/components/call-trigger.html')
+            </div>
+        </div>
+    </section>
+
+    @include('partials/components/sections/how-section.html')
+    @include('partials/components/sections/consultant-section.html')
+    @include('partials/components/sections/services-slider.html')
+    @include('partials/components/sections/reviews-section.html')
+    @include('partials/components/sections/quiz-section.html')
+    @include('partials/components/sections/about-section.html')
+    @include('partials/components/sections/map-section.html')
+</main>
+
+@include('partials/footer.html')
+@include('partials/modals.html')
+</body>
+<script src="js/main.js"></script>
+
+</html>
+
+

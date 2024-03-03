@@ -1,0 +1,174 @@
+.header {
+	padding: 20px 0;
+	background: rgba(0, 0, 0, 0.69);
+	backdrop-filter: blur(15.5px);
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 37;
+
+
+	&__switcher {
+		position: relative;
+
+		@include small-tablet {
+			display: none;
+		}
+	}
+
+	&__inner {
+
+		gap: clamp(20px, 4.839vw, 90rem);
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+
+		& > *:not(.mobile-menu) {
+			position: relative;
+			z-index: 36;
+		}
+	}
+
+	.logo {
+		margin-right: auto;
+		max-width: clamp(154px, 20.161vw, 300rem);
+		width: 100%;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__nav {
+
+		@include tablet {
+			display: none;
+		}
+
+
+		&-list {
+			display: flex;
+			align-items: center;
+			flex-shrink: 0;
+
+			gap: clamp(20px, 4.032vw, 70rem);
+		}
+
+		a {
+			color: rgba(var(--cl-a), 0.5);
+			text-align: center;
+			font-family: var(--font-family);
+			font-size: clamp(18px, 1.935vw, 24rem);
+			font-style: normal;
+			font-weight: 700;
+			line-height: 100%;
+
+			&:hover {
+				color: rgba(var(--cl-a), 1.0);
+			}
+		}
+	}
+
+	.burger {
+
+		@include burger;
+
+		&.active {
+			svg {
+				transform: scale(0);
+			}
+
+			.burger__line,
+			&:before,
+			&:after {
+				opacity: 1;
+			}
+		}
+
+		&:not(.active) {
+
+			.burger__line,
+			&:before,
+			&:after {
+				opacity: 0;
+			}
+		}
+
+		&__icon {
+			display: flex;
+
+			color: rgba(var(--cl-a), 0.5);
+
+			&:hover {
+				color: rgba(var(--cl-a), 1.0);
+			}
+
+			svg {
+				width: clamp(24px, 3.71vw, 46rem);
+				height: auto;
+				transition: all .4s;
+			}
+		}
+	}
+}
+
+.hidden-search {
+	position: relative;
+	//z-index: ;
+
+	&.active {
+		.hidden-search__box {
+			opacity: 1;
+			transform: translateY(-50%);
+		}
+	}
+
+	&__box {
+		background: rgba(var(--bg-d),1.0);
+		padding: 10px 20px;
+		z-index: 2;
+		display: flex;
+		align-items: center;
+		position: absolute;
+		right: -20px;
+		top: 50%;
+		transform: translateY(-200%);
+		opacity: 0;
+		transition: all .4s;
+
+		input {
+			width: 300px;
+			height: 40px;
+
+			@include mobile {
+				width: 62vw;
+			}
+
+			color: rgba(var(--cl-a),1.0);
+			font-family: var(--font-family);
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 130%; /* 39px */
+		}
+	}
+
+	&__btn {
+		cursor: pointer;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 1;
+		color: rgba(var(--cl-a), 0.5);
+		transition: all .4s;
+
+		&:hover {
+			color: rgba(var(--cl-a), 1.0);
+		}
+
+
+	}
+}

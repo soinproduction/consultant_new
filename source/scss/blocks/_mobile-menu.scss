@@ -1,0 +1,127 @@
+.mobile-menu {
+	position: fixed !important;
+	z-index: 35;
+	right: 0;
+	max-width: clamp(350px, 40.323vw, 700rem);
+	top: var(--header-height);
+	bottom: 0;
+	width: 100%;
+	overflow-y: auto;
+	background: rgba(0, 0, 0, 0.69);
+	backdrop-filter: blur(15.5px);
+	padding: 0px 50px 30px clamp(30px, 8.065vw, 100rem);
+	display: flex;
+	flex-direction: column;
+	transition: all .4s;
+	max-height: calc(100svh - var(--header-height));
+	transform: translate(100%);
+
+	&.active {
+		transform: translate(0%);
+	}
+
+	@include small-tablet {
+		z-index: 50;
+		padding: 0px 30px 30px 30px;
+	}
+
+	@include mobile{
+		max-width: 100%;
+		padding: 0px 20px 20px 20px;
+	}
+
+	&__wrapper {
+		@include small-tablet {
+			order: -1;
+			display: flex;
+			justify-content: space-between;
+			padding: 12px 0;
+			border-top: 1px solid  rgba(85, 85, 85, 0.5);
+			border-bottom: 1px solid  rgba(85, 85, 85, 0.5);
+		}
+	}
+
+	&__lang {
+		display: flex;
+		align-items: center;
+		gap: 17px;
+
+		a {
+			color: rgba(var(--cl-a),0.5);
+			font-family: var(--font-family);
+			font-size: clamp(16px, 1.613vw, 20rem);;
+			font-style: normal;
+			font-weight: 400;
+			line-height: normal;
+			letter-spacing: -0.4px;
+			transition: all .4s;
+
+			&.active {
+				color: rgba(var(--cl-a),1.0);
+				pointer-events: none;
+			}
+
+			&:hover {
+				color: rgba(var(--cl-c),1.0);
+			}
+		}
+	}
+
+
+	.transparent-social {
+		@include for-small-tablet {
+			display: none;
+		}
+
+		@include small-tablet {
+			padding-top: 20px;
+			border-top: 1px solid  rgba(85, 85, 85, 0.5);
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			gap: 30px;
+
+			a {
+				color: rgba(var(--cl-c),1.0);
+			}
+		}
+	}
+
+	.burger {
+		display: flex;
+
+		@include burger;
+	}
+
+	&__switcher {
+		@include for-small-tablet {
+			display: none;
+		}
+	}
+
+
+
+
+	&__nav {
+		flex-grow: 1;
+		padding: clamp(40px, 6.774vw, 84px) 0;
+		display: flex;
+		flex-direction: column;
+		gap: clamp(28px, 4.435vw, 55rem);
+
+		a {
+			color: rgba(var(--cl-a),1.0);
+			font-family: var(--font-family);
+			font-size: clamp(18px, 2.742vw, 34rem);
+			font-style: normal;
+			font-weight: 750;
+			line-height: normal;
+			letter-spacing: -0.68px;
+			padding-left: clamp(11px, 1.613vw, 20rem);
+			transition: all .4s;
+
+			@include border-animation(3px, -10px, var(--br-c), 0.4s);
+
+		}
+	}
+}

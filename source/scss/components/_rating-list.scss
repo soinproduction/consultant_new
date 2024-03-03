@@ -1,0 +1,141 @@
+.rating-list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: clamp(10px, 2.419vw, 30rem);
+
+	@include laptop {
+		@include for-tablet {
+			max-width: 100% !important;
+			width: 100% !important;
+		}
+	}
+
+	&__item {
+		width: 100%;
+
+		@include tablet {
+			width: 100%;
+		}
+	}
+
+	@include tablet {
+		flex-wrap: wrap;
+		display: flex;
+		justify-content: center;
+
+		br {
+			display: none;
+		}
+	}
+
+	@include small-tablet {
+		gap: 8px clamp(10px, 2.419vw, 30rem);
+	}
+}
+
+.rating-card {
+	display: flex;
+	align-items: center;
+	padding: Max(20px, 20rem) clamp(20px, 2.419vw, 40rem);
+	gap: Max(12px, 12rem);
+	background: linear-gradient(90deg, rgba(19, 151, 214, 0.15) 0%, rgba(19, 151, 214, 0.00) 100%);
+	position: relative;
+
+	@include mobile {
+		padding: 5px 20px;
+	}
+
+	&:before {
+		left: clamp(20px, 3.226vw, 40rem);
+		right: clamp(20px, 3.226vw, 40rem);
+		bottom: calc(Max(20px, 20rem) - 10px);
+		position: absolute;
+		content: '';
+		height: Max(3px, 3rem);
+		background-color: var(--br-c);
+		opacity: 0;
+		transition: all .3s ease;
+
+		@include mobile {
+			bottom: 0;
+			//left: 0;
+			//right: 0;
+		}
+	}
+
+	&:hover {
+		&:before {
+			opacity: 1;
+		}
+
+		.rating-card__value {
+			border-color: transparent;
+		}
+	}
+
+	&__value {
+		color: rgba(var(--cl-a),0.6);
+		font-family: var(--font-family);
+		font-size: clamp(20px,2.419vw, 36rem);
+		font-style: normal;
+		font-weight: 750;
+		line-height: 130%;
+		transition: all .3s ease-out;
+		padding-left: Max(12px, 12rem);
+		border-left: Max(3px, 3rem) solid var(--br-c);
+
+		display: flex;
+		align-items: center;
+		gap: Max(12px, 12rem);
+
+		svg {
+			--size: 30px;
+			width: clamp(var(--size), 2.419vw, 30rem);
+			height: clamp(var(--size), 2.419vw, 30rem);
+
+			@include mobile {
+				--size: 14px;
+			}
+		}
+
+		@include tablet {
+			padding-left: 17px;
+		}
+
+		@include mobile {
+			font-size: clamp(18px, 2.903vw, 36rem);
+		}
+	}
+
+	&__icon {
+		display: flex;
+		flex-shrink: 0;
+		max-width: clamp(35px, 4.032vw, 60rem);
+		width: 100%;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__wrapp {
+		display: flex;
+		align-items: center;
+		gap: Max(17px,17rem);
+		width: 100%;
+		color: rgba(var(--cl-g),1.0);
+		font-feature-settings: 'clig' off, 'liga' off;
+		font-family: var(--font-family);
+		font-size: Max(18px, 18rem);
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		text-decoration-line: underline;
+
+		@include mobile {
+			font-size: 16px;
+		}
+	}
+}
+

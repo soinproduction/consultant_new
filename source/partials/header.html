@@ -1,0 +1,81 @@
+<header class="header fixed-block">
+    <div class="container mode">
+        <div class="header__inner">
+            <a href="/" class="logo">
+                <img width="300" height="58" src="img/sprite/logo_white.svg" alt="">
+            </a>
+            
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#">
+                            Консультанти
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#">
+                            Послуги
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a class="sign-btn" href="#">
+                <svg width="25" height="25">
+                	<use href="img/sprite/sprite.svg#enter"></use>
+                </svg>
+            </a>
+
+            <form action="#" class="hidden-search">
+                <div class="hidden-search__box">
+                    <input placeholder="Поиск" type="text" class="search-form__input">
+                    <button class="hidden-search__btn">
+                        <svg width="25" height="25">
+                            <use href="img/sprite/sprite.svg#search"></use>
+                        </svg>
+                    </button>
+                </div>
+
+                <span class="hidden-search__btn">
+                    <svg width="25" height="25">
+                    	<use href="img/sprite/sprite.svg#search"></use>
+                    </svg>
+                </span>
+            </form>
+
+            <div class="header__switcher type-switcher">
+                <label class="type-switcher__label">
+                    <input type="radio" value="diia" name="type_switcher" checked>
+                    <span class="type-switcher__icon">
+                        <svg width="24" height="13">
+                        	<use href="img/sprite/sprite.svg#type-switcher1"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="type-switcher__label">
+                    <input type="radio" value="city" name="type_switcher">
+                    <span class="type-switcher__icon">
+                        <svg width="24" height="13">
+                        	<use href="img/sprite/sprite.svg#type-switcher2"></use>
+                        </svg>
+                    </span>
+                </label>
+            </div>
+
+            <button class="burger">
+                <span class="burger__line"></span>
+                <span class="burger__icon">
+                    <svg width="46" height="46">
+                    	<use href="img/sprite/sprite.svg#burger"></use>
+                    </svg>
+                </span>
+            </button>
+        </div>
+
+    </div>
+</header>
+@include('./components/mobile-menu.html')
+
+
+
+

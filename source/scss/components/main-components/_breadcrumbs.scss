@@ -1,0 +1,48 @@
+.breadcrumbs {
+	display: flex;
+	gap: Max(5px, 5rem);
+
+	&__item {
+		color: rgba(var(--cl-c),1.0);
+
+		a {
+			transition: all .4s;
+
+			&:hover {
+				color: rgba(var(--cl-a),1.0);
+			}
+		}
+
+		&:not(:first-child) {
+			position: relative;
+
+			&:before {
+				content: '/';
+				color: rgba(var(--cl-a),1.0);
+			}
+		}
+
+		&:last-child {
+			color: rgba(var(--cl-a),1.0);
+
+			a {
+				&:hover {
+					color: rgba(var(--cl-c),1.0);
+				}
+			}
+		}
+	}
+
+	a {
+		color: currentColor;
+		font-family: var(--font-family);
+		font-size: Max(16px, 16rem);
+		font-style: normal;
+		font-weight: 400;
+		line-height: 130%;
+
+		@include mobile {
+			font-size: 14px;
+		}
+	}
+}

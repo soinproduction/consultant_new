@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+@include('partials/header.html')
+
+<main>
+    <section class="main-hero">
+        <div class="main-hero__bg bg-image">
+            <picture>
+                <source type="image/webp" srcset="img/autopost_bg.webp">
+                <img loading="lazy" width="1920" height="1080" src="img/autopost_bg.png" alt="image">
+            </picture>
+        </div>
+
+        <div class="container mode">
+            <div class="main-hero__inner ">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item">
+                        <a href="#">Консультант</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="#">Документи</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="#">Війна</a>
+                    </li>
+                </ul>
+
+                <div class="main-top">
+                    <h1 class="main-top__title">
+                        Оподаткування купівлі продажу нерухомого майна
+                    </h1>
+                </div>
+
+                <!--                @include('partials/components/hero-list.html')-->
+
+                @include('partials/components/transparent-social.html')
+
+                @include('partials/components/call-trigger.html')
+
+                @include('partials/components/share-list.html',{'classMode':'main-hero__share'})
+
+            </div>
+        </div>
+    </section>
+
+    <section class="text-section">
+        <div class="text-section__background bg-image">
+            <picture>
+                <source type="image/webp" srcset="img/services_section_bg.webp">
+                <img loading="lazy" width="1920" height="940" src="img/services_section_bg.png" alt="image">
+            </picture>
+        </div>
+        <div class="container">
+            <div class="text-inner">
+                <div class="text-inner__top">
+                    <span class="text-inner__top-label blue">
+                        <svg width="24" height="24">
+                        	<use href="img/sprite/sprite.svg#marker-time"></use>
+                        </svg>
+                        Час прочитання: 3 хвилини
+                    </span>
+                    <span class="text-inner__top-label gray">
+                        <svg width="24" height="24">
+                        	<use href="img/sprite/sprite.svg#eye"></use>
+                        </svg>
+                        Кількість переглядів: 5000
+                    </span>
+                    <span class="text-inner__top-time">
+                        09.11.2023 11:48
+                    </span>
+                    <p>
+                        Нещодавно нашій команді поставили запитання: “Доброго дня прошу підказати:(1 продаж) 25.07.2021
+                        року було укладено договір купівлі продажу квартири який зареєстровано у нотаріуса з умовою
+                        розстрочення платежу покупцем - право власності у покупця виникне з моменту держ реєстрації яка
+                        проходить після остаточного розрахунку вартості. Розрахунок остаточний і держ реалізація була
+                        22.10.2021 року.27.07. Була продана ще одна квартира та паркомісця і одразу перейшов право
+                        власності. (2,3 продажа) Чи має оподатковуватись продажа 1 квартири?”
+                        <br><br>
+                        Ми хочемо поділитися відповідями наших фахівців:
+                    </p>
+                </div>
+
+
+                <div class="consultant-card">
+                    <span class="consultant-card__label">
+                      <span>PRO</span>
+                      <svg width="16" height="16">
+                        <use href="img/sprite/sprite.svg#star"></use>
+                      </svg>
+                      99.1
+                    </span>
+                    <div class="consultant-card__image">
+                        <picture>
+                            <source type="image/webp" srcset="img/man.webp">
+                            <img loading="lazy" width="296" height="460" src="img/man.png" alt="image">
+                        </picture>
+                    </div>
+
+                    <div class="consultant-card__descr">
+                        <h3 class="consultant-card__title">
+                            Приходько
+                            <span>
+                              Андрій Анатолійович
+                            </span>
+                        </h3>
+                        <span class="consultant-card__type">Юрист / Адвокат</span>
+                        <span class="consultant-card__geo">
+                              <svg width="20" height="20">
+                                  <use href="img/sprite/sprite.svg#geo-transparent"></use>
+                              </svg>
+                              Україна
+                        </span>
+                    </div>
+
+                    <a href="#" class="consultant-card__link arrow-button">і</a>
+                </div>
+
+                <h3 class="text-inner__title">
+                    <svg width="46" height="46">
+                    	<use href="img/sprite/sprite.svg#star"></use>
+                    </svg>
+                    Найкраща відповідь
+                </h3>
+
+                <p>
+                    <span>14.07.2023, 21:00</span>
+                    Консультация по уголовным и гражданским делам. 100% результат! уголовный юрист.  100% результат! уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный юрист.  100% результат! уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный юрист.  100% результат! уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный юрист.  100% результат! уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный юрист.  100% результат! уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный юрист.  100% результат! уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный юрист.  100% результат! уголовный юрист.
+                    <br> <br>
+                    Консультация по уголовным и гражданским делам. 100% результат! уголовный юрист.  100% результат! уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный юрист.  100% результат! уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный юрист.  100% результат! уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный юрист.  100% результат! уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный юрист.  100% результат! уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный юрист.  100% результат! уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный юрист.  100% результат! уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный юрист.  100% результат! уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный юрист.  100% результат! уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный юрист.  100% результат! уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный юрист.  100% результат! уголовный юрист.
+                </p>
+
+                <div class="text-card">
+                    <p>
+                        <span>14.07.2023, 21:00</span>
+                        Консультация по уголовным и гражданским делам. 100% результат! уголовный юрист.  100% результат! уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный юрист.  100% результат! уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный юрист.  100% результат! уголовный юрист.
+                    </p>
+                    <div class="text-card__card info-card">
+                        <span class="info-card__label">
+                          <span class="gold">Base</span>
+                          <svg width="24" height="24">
+                            <use href="img/sprite/sprite.svg#star"></use>
+                          </svg>
+                          99.1
+                        </span>
+
+                        <div class="info-card__info">
+                            <div class="info-card__image">
+                                <picture>
+                                	<source type="image/webp" srcset="img/man2.webp">
+                                	<img loading="lazy" width="165" height="165" src="img/man2.png" alt="image">
+                                </picture>
+                            </div>
+
+                            <div class="info-card__descr">
+                                <h3 class="info-card__title">
+                                    Приходько <span>Андрій Анатолійович</span>
+                                </h3>
+                                <span class="info-card__type">Юрист / Адвокат</span>
+                                <span class="info-card__geo">
+                                  <svg width="20" height="20">
+                                      <use href="img/sprite/sprite.svg#geo-transparent"></use>
+                                  </svg>
+                                  Україна,Червоноград
+                                 </span>
+                            </div>
+                        </div>
+
+                        <a href="#" class="arrow-button">і</a>
+                    </div>
+                </div>
+
+                <div class="text-card">
+                    <p>
+                        <span>14.07.2023, 21:00</span>
+                        Консультация по уголовным и гражданским делам. 100% результат! уголовный юрист.  100% результат! уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный юрист.  100% результат! уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный юрист.  100% результат! уголовный юрист.
+                    </p>
+                    <div class="text-card__card info-card">
+                        <span class="info-card__label">
+                          <span class="green">Base</span>
+                          <svg width="24" height="24">
+                            <use href="img/sprite/sprite.svg#star"></use>
+                          </svg>
+                          99.1
+                        </span>
+
+                        <div class="info-card__info">
+                            <div class="info-card__image">
+                                <picture>
+                                    <source type="image/webp" srcset="img/man2.webp">
+                                    <img loading="lazy" width="165" height="165" src="img/man2.png" alt="image">
+                                </picture>
+                            </div>
+
+                            <div class="info-card__descr">
+                                <h3 class="info-card__title">
+                                    Приходько <span>Андрій Анатолійович</span>
+                                </h3>
+                                <span class="info-card__type">Юрист / Адвокат</span>
+                                <span class="info-card__geo">
+                                  <svg width="20" height="20">
+                                      <use href="img/sprite/sprite.svg#geo-transparent"></use>
+                                  </svg>
+                                  Україна,Червоноград
+                                 </span>
+                            </div>
+                        </div>
+
+                        <a href="#" class="arrow-button">і</a>
+                    </div>
+                </div>
+
+                <div class="text-card">
+                    <p>
+                        <span>14.07.2023, 21:00</span>
+                        Консультация по уголовным и гражданским делам. 100% результат! уголовный юрист.  100% результат! уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный юрист.  100% результат! уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный юрист.  100% результат! уголовный юрист.
+                    </p>
+                    <div class="text-card__card info-card">
+                        <span class="info-card__label">
+                         <span class="green">Base</span>
+                          <svg width="24" height="24">
+                            <use href="img/sprite/sprite.svg#star"></use>
+                          </svg>
+                          99.1
+                        </span>
+
+                        <div class="info-card__info">
+                            <div class="info-card__image">
+                                <picture>
+                                    <source type="image/webp" srcset="img/man2.webp">
+                                    <img loading="lazy" width="165" height="165" src="img/man2.png" alt="image">
+                                </picture>
+                            </div>
+
+                            <div class="info-card__descr">
+                                <h3 class="info-card__title">
+                                    Приходько <span>Андрій Анатолійович</span>
+                                </h3>
+                                <span class="info-card__type">Юрист / Адвокат</span>
+                                <span class="info-card__geo">
+                                  <svg width="20" height="20">
+                                      <use href="img/sprite/sprite.svg#geo-transparent"></use>
+                                  </svg>
+                                  Україна,Червоноград
+                                 </span>
+                            </div>
+                        </div>
+
+                        <a href="#" class="arrow-button">і</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    @include('partials/components/sections/article-section.html',{
+    'title': 'Може бути цікаво',
+    'subtitle': 'Схожі послуги та статті'
+    })
+
+
+    @include('partials/components/sections/get-service.html',{
+    'classMode': 'bottom-line',
+    'title': 'отримати послугу',
+    'subtitle': 'В мобільному застосунку КОНСУЛЬТАНТ'
+    })
+
+    @include('partials/components/sections/reviews-section.html')
+
+
+    @include('partials/components/sections/consultant-section.html')
+    @include('partials/components/sections/quiz-section.html')
+    @include('partials/components/sections/about-section.html')
+    @include('partials/components/sections/content-box-mode.html')
+    @include('partials/components/sections/map-section.html')
+</main>
+
+@include('partials/footer.html')
+@include('partials/modals.html')
+</body>
+<script src="js/main.js"></script>
+
+</html>
+
+

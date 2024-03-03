@@ -1,0 +1,36 @@
+.pagination {
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__item {
+		& > * {
+			width: 32px;
+			height: 32px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			color: rgba(var(--cl-f),1.0);
+			font-family: var(--font-family3);
+			font-size: Max(14px, 14rem);
+			font-style: normal;
+			font-weight: 500;
+			line-height: normal;
+			letter-spacing: -0.225px;
+			transition: all .4s;
+		}
+
+		a {
+			&:hover {
+				color: rgba(var(--cl-b),1.0);
+			}
+		}
+	}
+
+	.current {
+		color: rgba(var(--cl-b),1.0);
+		font-size: Max(18px, 18rem);
+	}
+}

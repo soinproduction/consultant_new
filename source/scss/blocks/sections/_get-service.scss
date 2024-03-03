@@ -1,0 +1,38 @@
+.get-service {
+	position: relative;
+
+	.main-top {
+		grid-column: 1/-1;
+		max-width: 100%;
+		width: 100%;
+		align-items: flex-start;
+		
+		&__title {
+			margin-left: clamp(40px, 11.29vw, 180rem);
+		}
+	}
+
+
+	&__inner {
+		padding: clamp(33px, 5.645vw, 94rem) 0 clamp(30px, 8.065vw, 120rem);
+
+		--col-gap: clamp(20px, 8.065vw, 150rem);
+		--text-size: clamp(320px, 38.71vw, 480rem);
+
+		display: grid;
+		grid-template-columns: var(--text-size) calc(100% - var(--col-gap) - var(--text-size));
+		align-items: center;
+		width: 100%;
+
+		gap: clamp(22px, 5vw, 62rem) var(--col-gap);
+
+		@include small-tablet {
+			grid-template-columns: 100%;
+			gap: clamp(22px, 5vw, 62rem);
+
+			.main-description {
+				order: 3;
+			}
+		}
+	}
+}

@@ -1,0 +1,38 @@
+.type-switcher {
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+	align-items: center;
+
+	&__label {
+		display: flex;
+		position: relative;
+
+		svg {
+
+		}
+
+		input {
+			position: absolute;
+			opacity: 0;
+			z-index: -1;
+
+			&:checked ~ .type-switcher__icon {
+				opacity: 1;
+				border-color: var(--br-d);
+			}
+		}
+	}
+
+	&__icon {
+		cursor: pointer;
+		opacity: .2;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid transparent;
+		flex-shrink: 0;
+		border-radius: 14px;
+		width: 44px;
+		height: 44px;
+	}
+}

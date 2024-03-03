@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+@include('partials/header.html')
+
+<main>
+    <section class="main-hero ">
+        <div class="main-hero__bg bg-image">
+            <picture>
+                <source type="image/webp" srcset="img/search.webp">
+                <img loading="lazy" width="1920" height="1080" src="img/search.png" alt="image">
+            </picture>
+        </div>
+
+        <div class="container mode">
+            <div class="main-hero__inner search">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item">
+                        <a href="#">Консультант</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="#">Документи</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="#">Війна</a>
+                    </li>
+                </ul>
+
+                <div class="main-top">
+                    <h1 class="main-top__title">
+                        пошук
+                    </h1>
+
+                    <form action="#" class="search-form">
+                        <label for="#" class="search-form__label">
+
+                            <input type="text" placeholder="Терміново потрібен сімейний адвокат">
+                            <button class="search">
+                                <svg width="25" height="25">
+                                    <use href="img/sprite/sprite.svg#search"></use>
+                                </svg>
+                            </button>
+                        </label>
+
+
+                    </form>
+                </div>
+
+
+                <!--                @include('partials/components/hero-list.html')-->
+
+                @include('partials/components/transparent-social.html')
+
+                @include('partials/components/call-trigger.html')
+
+                @include('partials/components/share-list.html',{'classMode':'main-hero__share'})
+
+            </div>
+        </div>
+    </section>
+
+    <section class="text-section">
+        <div class="text-section__background bg-image">
+            <picture>
+                <source type="image/webp" srcset="img/services_section_bg.webp">
+                <img loading="lazy" width="1920" height="940" src="img/services_section_bg.png" alt="image">
+            </picture>
+        </div>
+        <div class="container">
+            <div class="text-inner search-list">
+                <h3 class="search-list__title">
+                    Результатів: приблизно 4800
+                </h3>
+                <div class="text-card">
+                    <div class="text-card__card info-card info-card--bg">
+                        <span class="info-card__label">
+                          <span class="gold">Start</span>
+                          <svg width="24" height="24">
+                            <use href="img/sprite/sprite.svg#star"></use>
+                          </svg>
+                          99.1
+                        </span>
+
+                        <div class="info-card__info">
+                            <div class="info-card__image">
+                                <picture>
+                                    <source type="image/webp" srcset="img/man2.webp">
+                                    <img loading="lazy" width="165" height="165" src="img/man2.png" alt="image">
+                                </picture>
+                            </div>
+
+                            <div class="info-card__descr">
+                                <h3 class="info-card__title">
+                                    Приходько <span>Андрій Анатолійович</span>
+                                </h3>
+                                <span class="info-card__type">Юрист / Адвокат</span>
+                                <span class="info-card__geo">
+                                  <svg width="20" height="20">
+                                      <use href="img/sprite/sprite.svg#geo-transparent"></use>
+                                  </svg>
+                                  Україна, Червоноград
+                                 </span>
+                            </div>
+                        </div>
+
+                        <a href="#" class="arrow-button">і</a>
+                    </div>
+                    <div class="text-card__wrapper">
+                        <h3 class="text-card__title" data-value="Знайдено 14">Юрист</h3>
+                        <p>
+                            Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a> . 100% результат! уголовный <a href="#">юрист</a>. Консультация
+                            по уголовным и гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100%
+                            результат! уголовный <a href="#">юрист</a>. Юрист по уголовным и гражданским делам. 100%
+                            результат! уголовный <a href="#">юрист</a>. 100% результат! уголовный <a href="#">юрист</a>.
+                            Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a>. 100% результат! уголовный юрист. Консультация по уголовным и
+                            гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100% результат!
+                            уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a>. 100% результат! уголовный <a href="#">юрист</a>. Консультация по
+                            уголовным и гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100%
+                            результат! уголовный юрист...
+                        </p>
+                    </div>
+                </div>
+                <div class="text-card">
+                    <div class="text-card__card info-card ">
+                        <span class="info-card__label">
+                          <span class="green">Base</span>
+                          <svg width="24" height="24">
+                            <use href="img/sprite/sprite.svg#star"></use>
+                          </svg>
+                          99.1
+                        </span>
+
+                        <div class="info-card__info">
+                            <div class="info-card__image">
+                                <img loading="lazy" width="165" height="165" src="img/search/black.svg" alt="image">
+                            </div>
+
+                            <div class="info-card__descr">
+                                <h3 class="info-card__title">
+                                    Консультант № 3
+                                </h3>
+                                <span class="info-card__type">Юрист / Адвокат</span>
+                                <span class="info-card__geo">
+                                  <svg width="20" height="20">
+                                      <use href="img/sprite/sprite.svg#geo-transparent"></use>
+                                  </svg>
+                                  Україна, Червоноград
+                                 </span>
+                            </div>
+                        </div>
+
+                        <a href="#" class="arrow-button">і</a>
+                    </div>
+                    <div class="text-card__wrapper">
+                        <h3 class="text-card__title" data-value="Знайдено 14">Юрист</h3>
+                        <p>
+                            Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a> . 100% результат! уголовный <a href="#">юрист</a>. Консультация
+                            по уголовным и гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100%
+                            результат! уголовный <a href="#">юрист</a>. Юрист по уголовным и гражданским делам. 100%
+                            результат! уголовный <a href="#">юрист</a>. 100% результат! уголовный <a href="#">юрист</a>.
+                            Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a>. 100% результат! уголовный юрист. Консультация по уголовным и
+                            гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100% результат!
+                            уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a>. 100% результат! уголовный <a href="#">юрист</a>. Консультация по
+                            уголовным и гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100%
+                            результат! уголовный юрист...
+                        </p>
+                    </div>
+                </div>
+                <div class="text-card">
+                    <div class="text-card__card info-card ">
+                        <span class="info-card__label">
+<!--                          <span class="green">Base</span>-->
+                          <svg width="24" height="24">
+                            <use href="img/sprite/sprite.svg#star"></use>
+                          </svg>
+                          99.1
+                        </span>
+
+                        <div class="info-card__info">
+                            <div class="info-card__image">
+                                <img loading="lazy" width="165" height="165" src="img/search/gpt.svg" alt="image">
+                            </div>
+
+                            <div class="info-card__descr">
+                                <h3 class="info-card__title">
+                                    Chat GPT
+                                </h3>
+                                <span class="info-card__type">Штучний інтелект</span>
+                                <span class="info-card__geo">
+                                  <svg width="20" height="20">
+                                      <use href="img/sprite/sprite.svg#geo-transparent"></use>
+                                  </svg>
+                                  Україна, Київ
+                                 </span>
+                            </div>
+                        </div>
+
+                        <a href="#" class="arrow-button">і</a>
+                    </div>
+                    <div class="text-card__wrapper">
+                        <h3 class="text-card__title" data-value="Знайдено 14">Юрист</h3>
+                        <p>
+                            Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a> . 100% результат! уголовный <a href="#">юрист</a>. Консультация
+                            по уголовным и гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100%
+                            результат! уголовный <a href="#">юрист</a>. Юрист по уголовным и гражданским делам. 100%
+                            результат! уголовный <a href="#">юрист</a>. 100% результат! уголовный <a href="#">юрист</a>.
+                            Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a>. 100% результат! уголовный юрист. Консультация по уголовным и
+                            гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100% результат!
+                            уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a>. 100% результат! уголовный <a href="#">юрист</a>. Консультация по
+                            уголовным и гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100%
+                            результат! уголовный юрист...
+                        </p>
+                    </div>
+                </div>
+
+                <div class="text-card">
+                    <div class="text-card__card balance-card">
+
+                        <img class="balance-card__bg"
+                             src="https://consultant.net.ua/storage/consultants/1/background_image/AYRloQ0AdefKIsfQEqUXtG5y9qku3ANsVWE29foQ.webp"
+                             alt="">
+
+                        <div class="balance-card__wrapp">
+                            <span class="balance-card__status">PREMIUM</span>
+                            <span class="balance-card__rating">
+                              <svg width="24" height="24">
+                                <use href="img/sprite/sprite.svg#star"></use>
+                              </svg>
+                                0.75
+                            </span>
+                        </div>
+                        <div class="balance-card__box">
+                            <span class="balance-card__name"><b>Приходько</b> Андрій Анатолійович</span>
+                            <div class="balance-card__info">
+                                <span class="balance-card__job">Адвокат</span>
+                                <span class="balance-card__geo">
+                                    <svg width="20" height="20">
+                                      <use href="img/sprite/sprite.svg#geo-transparent"></use>
+                                    </svg>
+                                    Украи́на, Киев
+                                </span>
+                            </div>
+                        </div>
+                        <div class="balance-card__user">
+                            <picture>
+                                <source type="image/webp"
+                                        srcset="https://consultant.net.ua/storage/consultants/1/big_avatar/5eTjBHleIGSVMHFRqqtVtanRbyj6O9xeABawK0Eb.png">
+                                <img width="245" height="270"
+                                     src="https://consultant.net.ua/storage/consultants/1/big_avatar/5eTjBHleIGSVMHFRqqtVtanRbyj6O9xeABawK0Eb.png"
+                                     alt="Приходько Андрій Анатолійович">
+                            </picture>
+                        </div>
+
+                        <div class="balance-card__bottom">
+                            <span class="balance-card__price">
+                                Цена:
+                                <b>40 000 грн/год</b>
+                            </span>
+                            <a href="https://consultant.net.ua/ru/consultant/1" class="blue-btn">
+                                Подробнее
+                            </a>
+                        </div>
+                    </div>
+                    <div class="text-card__wrapper">
+                        <h3 class="text-card__title" data-value="Знайдено 14">Юрист</h3>
+                        <p>
+                            Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a> . 100% результат! уголовный <a href="#">юрист</a>. Консультация
+                            по уголовным и гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100%
+                            результат! уголовный <a href="#">юрист</a>. Юрист по уголовным и гражданским делам. 100%
+                            результат! уголовный <a href="#">юрист</a>. 100% результат! уголовный <a href="#">юрист</a>.
+                            Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a>. 100% результат! уголовный юрист. Консультация по уголовным и
+                            гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100% результат!
+                            уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a>. 100% результат! уголовный <a href="#">юрист</a>. Консультация по
+                            уголовным и гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100%
+                            результат! уголовный юрист...
+                        </p>
+                    </div>
+                </div>
+
+                <div class="text-card">
+                    <a href="#" class="text-card__card categories-card">
+                        <div class="about-card__top">
+                            <time class="about-card__time" datetime="2023-10-25">25.10.2023</time>
+                            <span class="about-card__type">Послуга</span>
+                        </div>
+                        <div class="categories-card__image">
+                            <picture>
+                                <source type="image/webp" srcset="img/categories-img.webp">
+                                <img loading="lazy" width="360" height="217" src="img/categories-img.png" alt="image">
+                            </picture>
+                            <span class="categories-card__icon">
+                                <img src="img/categories-icon3.svg" alt="icon">
+                            </span>
+                        </div>
+                        <span class="categories-card__name">Послуги військового адвоката по кримінальних справах</span>
+                    </a>
+                    <div class="text-card__wrapper">
+                        <h3 class="text-card__title" data-value="Знайдено 14">Юрист</h3>
+                        <p>
+                            Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a> . 100% результат! уголовный <a href="#">юрист</a>. Консультация
+                            по уголовным и гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100%
+                            результат! уголовный <a href="#">юрист</a>. Юрист по уголовным и гражданским делам. 100%
+                            результат! уголовный <a href="#">юрист</a>. 100% результат! уголовный <a href="#">юрист</a>.
+                            Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a>. 100% результат! уголовный юрист. Консультация по уголовным и
+                            гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100% результат!
+                            уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a>. 100% результат! уголовный <a href="#">юрист</a>. Консультация по
+                            уголовным и гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100%
+                            результат! уголовный юрист...
+                        </p>
+                    </div>
+                </div>
+
+                <div class="text-card">
+                    <a href="#" class="text-card__card about-card">
+                        <div class="about-card__top">
+                            <time class="about-card__time" datetime="2023-10-25">25.10.2023</time>
+                            <span class="about-card__type">Новина</span>
+                        </div>
+
+                        <h2 class="about-card__text">
+                            У Вас є бухгалтер у штаті чи на аутсорсингу?
+                        </h2>
+
+                        <div class="about-card__image">
+                            <picture>
+                                <source type="image/webp" srcset="img/grid-card.webp">
+                                <img loading="lazy" width="450" height="282" src="img/grid-card.png" alt="image">
+                            </picture>
+                        </div>
+                    </a>
+                    <div class="text-card__wrapper">
+                        <h3 class="text-card__title" data-value="Знайдено 14">Юрист</h3>
+                        <p>
+                            Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a> . 100% результат! уголовный <a href="#">юрист</a>. Консультация
+                            по уголовным и гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100%
+                            результат! уголовный <a href="#">юрист</a>. Юрист по уголовным и гражданским делам. 100%
+                            результат! уголовный <a href="#">юрист</a>. 100% результат! уголовный <a href="#">юрист</a>.
+                            Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a>. 100% результат! уголовный юрист. Консультация по уголовным и
+                            гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100% результат!
+                            уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a>. 100% результат! уголовный <a href="#">юрист</a>. Консультация по
+                            уголовным и гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100%
+                            результат! уголовный юрист...
+                        </p>
+                    </div>
+                </div>
+
+                <div class="text-card">
+                    <a href="#" class="text-card__card about-card">
+                        <div class="about-card__top">
+                            <time class="about-card__time" datetime="2023-10-25">25.10.2023</time>
+                            <span class="about-card__type">Консультація</span>
+                        </div>
+
+                        <h2 class="about-card__text">
+                            У Вас є бухгалтер у штаті чи на аутсорсингу?
+                        </h2>
+
+                        <div class="about-card__image">
+                            <picture>
+                                <source type="image/webp" srcset="img/search/img.webp">
+                                <img loading="lazy" width="450" height="282" src="img/search/img.png" alt="image">
+                            </picture>
+                        </div>
+                    </a>
+                    <div class="text-card__wrapper">
+                        <h3 class="text-card__title" data-value="Знайдено 14">Юрист</h3>
+                        <p>
+                            Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a> . 100% результат! уголовный <a href="#">юрист</a>. Консультация
+                            по уголовным и гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100%
+                            результат! уголовный <a href="#">юрист</a>. Юрист по уголовным и гражданским делам. 100%
+                            результат! уголовный <a href="#">юрист</a>. 100% результат! уголовный <a href="#">юрист</a>.
+                            Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a>. 100% результат! уголовный юрист. Консультация по уголовным и
+                            гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100% результат!
+                            уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a>. 100% результат! уголовный <a href="#">юрист</a>. Консультация по
+                            уголовным и гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100%
+                            результат! уголовный юрист...
+                        </p>
+                    </div>
+                </div>
+
+                <div class="text-card">
+                    <a href="#" class="text-card__card about-card">
+                        <div class="about-card__top">
+                            <time class="about-card__time" datetime="2023-10-25">25.10.2023</time>
+                            <span class="about-card__type">Стаття</span>
+                        </div>
+
+                        <h2 class="about-card__text">
+                            У Вас є бухгалтер у штаті чи на аутсорсингу?
+                        </h2>
+
+                        <div class="about-card__image">
+                            <picture>
+                                <source type="image/webp" srcset="img/grid-card.webp">
+                                <img loading="lazy" width="450" height="282" src="img/grid-card.png" alt="image">
+                            </picture>
+                        </div>
+                    </a>
+                    <div class="text-card__wrapper">
+                        <h3 class="text-card__title" data-value="Знайдено 14">Юрист</h3>
+                        <p>
+                            Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a> . 100% результат! уголовный <a href="#">юрист</a>. Консультация
+                            по уголовным и гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100%
+                            результат! уголовный <a href="#">юрист</a>. Юрист по уголовным и гражданским делам. 100%
+                            результат! уголовный <a href="#">юрист</a>. 100% результат! уголовный <a href="#">юрист</a>.
+                            Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a>. 100% результат! уголовный юрист. Консультация по уголовным и
+                            гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100% результат!
+                            уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a>. 100% результат! уголовный <a href="#">юрист</a>. Консультация по
+                            уголовным и гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100%
+                            результат! уголовный юрист...
+                        </p>
+                    </div>
+                </div>
+
+                <div class="text-card">
+                    <a href="#" class="text-card__card about-card">
+                        <div class="about-card__top">
+                            <time class="about-card__time" datetime="2023-10-25">25.10.2023</time>
+                            <span class="about-card__type">Відео</span>
+                        </div>
+
+                        <h2 class="about-card__text">
+                            У Вас є бухгалтер у штаті чи на аутсорсингу?
+                        </h2>
+
+                        <div class="about-card__image">
+                            <picture>
+                                <source type="image/webp" srcset="img/grid-card.webp">
+                                <img loading="lazy" width="450" height="282" src="img/grid-card.png" alt="image">
+                            </picture>
+                        </div>
+
+                        <div class="about-card__link video-box" lg-uid="lg3">
+                            <span class="arrow-button" data-src="https://youtu.be/lc1WWLlz10k?si=keLpsLC49yvZEChU">
+                                <svg width="30" height="30">
+                                    <use href="img/sprite/sprite.svg#play"></use>
+                                </svg>
+                            </span>
+                        </div>
+                    </a>
+                    <div class="text-card__wrapper">
+                        <h3 class="text-card__title" data-value="Знайдено 14">Юрист</h3>
+                        <p>
+                            Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a> . 100% результат! уголовный <a href="#">юрист</a>. Консультация
+                            по уголовным и гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100%
+                            результат! уголовный <a href="#">юрист</a>. Юрист по уголовным и гражданским делам. 100%
+                            результат! уголовный <a href="#">юрист</a>. 100% результат! уголовный <a href="#">юрист</a>.
+                            Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a>. 100% результат! уголовный юрист. Консультация по уголовным и
+                            гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100% результат!
+                            уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a>. 100% результат! уголовный <a href="#">юрист</a>. Консультация по
+                            уголовным и гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100%
+                            результат! уголовный юрист...
+                        </p>
+                    </div>
+                </div>
+
+                <div class="text-card">
+                    <a href="#" class="text-card__card categories-card">
+                        <div class="about-card__top">
+                            <time class="about-card__time" datetime="2023-10-25">25.10.2023</time>
+                            <span class="about-card__type">Документ</span>
+                        </div>
+                        <div class="categories-card__image">
+                            <picture>
+                                <source type="image/webp" srcset="img/categories-img.webp">
+                                <img loading="lazy" width="360" height="217" src="img/categories-img.png" alt="image">
+                            </picture>
+                            <span class="categories-card__icon">
+                                <img src="img/categories-icon3.svg" alt="icon">
+                            </span>
+                        </div>
+                        <span class="categories-card__name">Послуги військового адвоката по кримінальних справах</span>
+                    </a>
+                    <div class="text-card__wrapper">
+                        <h3 class="text-card__title" data-value="Знайдено 14">Юрист</h3>
+                        <p>
+                            Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a> . 100% результат! уголовный <a href="#">юрист</a>. Консультация
+                            по уголовным и гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100%
+                            результат! уголовный <a href="#">юрист</a>. Юрист по уголовным и гражданским делам. 100%
+                            результат! уголовный <a href="#">юрист</a>. 100% результат! уголовный <a href="#">юрист</a>.
+                            Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a>. 100% результат! уголовный юрист. Консультация по уголовным и
+                            гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100% результат!
+                            уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a>. 100% результат! уголовный <a href="#">юрист</a>. Консультация по
+                            уголовным и гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100%
+                            результат! уголовный юрист...
+                        </p>
+                    </div>
+                </div>
+
+                <div class="text-card">
+                    <a href="#" class="text-card__card categories-card">
+                        <div class="about-card__top">
+                            <time class="about-card__time" datetime="2023-10-25">25.10.2023</time>
+                            <span class="about-card__type">Категорiя</span>
+                        </div>
+                        <div class="categories-card__image">
+                            <picture>
+                                <source type="image/webp" srcset="img/categories-img.webp">
+                                <img loading="lazy" width="360" height="217" src="img/categories-img.png" alt="image">
+                            </picture>
+                            <span class="categories-card__icon">
+                                <img src="img/categories-icon3.svg" alt="icon">
+                            </span>
+                        </div>
+                        <span class="categories-card__name">Послуги військового адвоката по кримінальних справах</span>
+                    </a>
+                    <div class="text-card__wrapper">
+                        <h3 class="text-card__title" data-value="Знайдено 14">Юрист</h3>
+                        <p>
+                            Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a> . 100% результат! уголовный <a href="#">юрист</a>. Консультация
+                            по уголовным и гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100%
+                            результат! уголовный <a href="#">юрист</a>. Юрист по уголовным и гражданским делам. 100%
+                            результат! уголовный <a href="#">юрист</a>. 100% результат! уголовный <a href="#">юрист</a>.
+                            Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a>. 100% результат! уголовный юрист. Консультация по уголовным и
+                            гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100% результат!
+                            уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a>. 100% результат! уголовный <a href="#">юрист</a>. Консультация по
+                            уголовным и гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100%
+                            результат! уголовный юрист...
+                        </p>
+                    </div>
+                </div>
+
+                <div class="text-card">
+                    <a href="#" class="text-card__card categories-card">
+                        <div class="about-card__top">
+                            <time class="about-card__time" datetime="2023-10-25">25.10.2023</time>
+                            <span class="about-card__type">Пiдкатегорiя</span>
+                        </div>
+                        <div class="categories-card__image">
+                            <picture>
+                                <source type="image/webp" srcset="img/categories-img.webp">
+                                <img loading="lazy" width="360" height="217" src="img/categories-img.png" alt="image">
+                            </picture>
+                            <span class="categories-card__icon">
+                                <img src="img/categories-icon3.svg" alt="icon">
+                            </span>
+                        </div>
+                        <span class="categories-card__name">Послуги військового адвоката по кримінальних справах</span>
+                    </a>
+                    <div class="text-card__wrapper">
+                        <h3 class="text-card__title" data-value="Знайдено 14">Юрист</h3>
+                        <p>
+                            Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a> . 100% результат! уголовный <a href="#">юрист</a>. Консультация
+                            по уголовным и гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100%
+                            результат! уголовный <a href="#">юрист</a>. Юрист по уголовным и гражданским делам. 100%
+                            результат! уголовный <a href="#">юрист</a>. 100% результат! уголовный <a href="#">юрист</a>.
+                            Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a>. 100% результат! уголовный юрист. Консультация по уголовным и
+                            гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100% результат!
+                            уголовный юрист. Консультация по уголовным и гражданским делам. 100% результат! уголовный <a
+                                    href="#">юрист</a>. 100% результат! уголовный <a href="#">юрист</a>. Консультация по
+                            уголовным и гражданским делам. 100% результат! уголовный <a href="#">юрист</a>. 100%
+                            результат! уголовный юрист...
+                        </p>
+                    </div>
+                </div>
+
+
+                <a href="#" class="search-list__more blue-btn">
+                    Більше результатів
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--    @include('partials/components/sections/article-section.html',{-->
+    <!--    'title': 'Може бути цікаво',-->
+    <!--    'subtitle': 'Схожі послуги та статті'-->
+    <!--    })-->
+    <!---->
+    <!---->
+    <!--    @include('partials/components/sections/get-service.html',{-->
+    <!--    'classMode': 'bottom-line',-->
+    <!--    'title': 'отримати послугу',-->
+    <!--    'subtitle': 'В мобільному застосунку КОНСУЛЬТАНТ'-->
+    <!--    })-->
+    <!---->
+    <!--    @include('partials/components/sections/reviews-section.html')-->
+    <!---->
+    <!---->
+    <!--    @include('partials/components/sections/consultant-section.html')-->
+    <!--    @include('partials/components/sections/quiz-section.html')-->
+    <!--    @include('partials/components/sections/about-section.html')-->
+    <!--    @include('partials/components/sections/content-box-mode.html')-->
+    @include('partials/components/sections/map-section.html')
+</main>
+
+@include('partials/footer.html')
+@include('partials/modals.html')
+</body>
+<script src="js/main.js"></script>
+
+</html>
+
+

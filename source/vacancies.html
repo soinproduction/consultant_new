@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+@include('partials/header.html')
+
+<main>
+    <section class="main-hero">
+        <div class="main-hero__bg bg-image">
+            <picture>
+                <source type="image/webp" srcset="img/services_bg3.webp">
+                <img loading="lazy" width="1920" height="1080" src="img/services_bg3.png" alt="image">
+            </picture>
+        </div>
+
+        <div class="container mode">
+            <div class="main-hero__inner mode">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item">
+                        <a href="#">Консультант</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="#">Вакансії</a>
+                    </li>
+                </ul>
+
+                <div class="main-top">
+                    <h1 class="main-top__title">Вакансії
+
+                    </h1>
+                    <p class="main-top__subtitle">Знайдіть роботу мрії</p>
+                </div>
+
+                @include('partials/components/transparent-social.html')
+
+                @include('partials/components/call-trigger.html')
+
+                @include('partials/components/share-list.html',{'classMode':'main-hero__share'})
+
+            </div>
+        </div>
+    </section>
+
+    <section class="vacancies-section">
+        <div class="vacancies-section__background bg-image">
+            <picture>
+                <source type="image/webp" srcset="img/services_section_bg.webp">
+                <img loading="lazy" width="1920" height="940" src="img/services_section_bg.png" alt="image">
+            </picture>
+        </div>
+        <div class="container">
+            <div class="vacancies-section__inner">
+                <div class="vacancies-card">
+                    <div class="vacancies-card__info">
+                        <h3 class="vacancies-card__title">
+                            Грант - менеджер
+                        </h3>
+                        <p>Пн-Пт: 9:30 - 18:00  |  Робота в офісі</p>
+                    </div>
+                    <span class="vacancies-card__label">
+                        Міжнародне корпоративне право
+                    </span>
+                    <a href="#" class="blue-btn">Детальніше</a>
+                </div>
+                <div class="vacancies-card">
+                    <div class="vacancies-card__info">
+                        <h3 class="vacancies-card__title">
+                            Юрист практики військового прав та перерахунку військових пенсій
+                        </h3>
+                        <p>Пн-Пт: 9:30 - 18:00  |  Робота в офісі</p>
+                    </div>
+                    <span class="vacancies-card__label">
+                        Військове право
+                    </span>
+                    <a href="#" class="blue-btn">Детальніше</a>
+                </div>
+                <div class="vacancies-card">
+                    <div class="vacancies-card__info">
+                        <h3 class="vacancies-card__title">
+                            Юрист практики податкового права
+                        </h3>
+                        <p>Пн-Пт: 9:30 - 18:00  |  Робота в офісі</p>
+                    </div>
+                    <span class="vacancies-card__label">
+                        Податкове право
+                    </span>
+                    <a href="#" class="blue-btn">Детальніше</a>
+                </div>
+                <div class="vacancies-card">
+                    <div class="vacancies-card__info">
+                        <h3 class="vacancies-card__title">
+                            Маркетолог
+                        </h3>
+                        <p>Пн-Пт: 9:30 - 18:00  |  Робота в офісі</p>
+                    </div>
+<!--                    <span class="vacancies-card__label">-->
+<!--                        Податкове право-->
+<!--                    </span>-->
+                    <a href="#" class="blue-btn">Детальніше</a>
+                </div>
+                <div class="vacancies-card">
+                    <div class="vacancies-card__info">
+                        <h3 class="vacancies-card__title">
+                            Грант - менеджер
+                        </h3>
+                        <p>Пн-Пт: 9:30 - 18:00  |  Робота в офісі</p>
+                    </div>
+                    <span class="vacancies-card__label">
+                        Міжнародне корпоративне право
+                    </span>
+                    <a href="#" class="blue-btn">Детальніше</a>
+                </div>
+                <div class="vacancies-card">
+                    <div class="vacancies-card__info">
+                        <h3 class="vacancies-card__title">
+                            Юрист практики військового прав та перерахунку військових пенсій
+                        </h3>
+                        <p>Пн-Пт: 9:30 - 18:00  |  Робота в офісі</p>
+                    </div>
+                    <span class="vacancies-card__label">
+                        Військове право
+                    </span>
+                    <a href="#" class="blue-btn">Детальніше</a>
+                </div>
+                <div class="vacancies-card">
+                    <div class="vacancies-card__info">
+                        <h3 class="vacancies-card__title">
+                            Юрист практики податкового права
+                        </h3>
+                        <p>Пн-Пт: 9:30 - 18:00  |  Робота в офісі</p>
+                    </div>
+                    <span class="vacancies-card__label">
+                        Податкове право
+                    </span>
+                    <a href="#" class="blue-btn">Детальніше</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    @include('partials/components/sections/how-section.html')
+    @include('partials/components/sections/reviews-section.html')
+    @include('partials/components/sections/quiz-section.html')
+    @include('partials/components/sections/about-section.html')
+    @include('partials/components/sections/content-box-mode.html')
+    @include('partials/components/sections/map-section.html')
+</main>
+
+@include('partials/footer.html')
+@include('partials/modals.html')
+</body>
+<script src="js/main.js"></script>
+
+</html>
+
+

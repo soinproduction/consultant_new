@@ -1,0 +1,19 @@
+.share-list {
+	display: flex;
+	align-items: center;
+	gap: clamp(12px, 1.613vw, 20rem);
+
+	img {
+		width: clamp(32px, 4.355vw, 54rem);
+		aspect-ratio: 1;
+		display: flex;
+	}
+
+	a {
+		transition: all .4s;
+
+		@include hover {
+			transform: scale(1.1);
+		}
+	}
+}
